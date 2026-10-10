@@ -1,0 +1,6 @@
+{
+  "name": "ZIKR — Official Website",
+  "description": "The official website for ZIKR, a calm and thoughtfully designed Islamic remembrance application for Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZIKR — أكثر من ذكر | الموقع الرسمي</title>
+    <meta
+      name="description"
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+    />
+    <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAF8F4" media="(prefers-color-scheme: light)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZIKR" />
+    <meta property="og:title" content="ZIKR — أكثر من ذكر | الموقع الرسمي" />
+    <meta
+      property="og:description"
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+    />
+    <meta property="og:image" content="/src/assets/images/zikr_logo_pfp_1791617547914.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZIKR — أكثر من ذكر | الموقع الرسمي" />
+    <meta
+      name="twitter:description"
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+    />
+    <meta name="twitter:image" content="/src/assets/images/zikr_logo_pfp_1791617547914.jpg" />
+
+    <!-- Official ZIKR Logo / PFP Favicon & Apple Touch Icon -->
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="/src/assets/images/zikr_logo_pfp_1791617547914.jpg"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/src/assets/images/zikr_logo_pfp_1791617547914.jpg"
+    />
+
+    <!-- Fonts: Plus Jakarta Sans (Latin), IBM Plex Sans Arabic & Amiri (Arabic), Noto Sans Ethiopic (Amharic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Zero-flash Theme & Language Initialization -->
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('zikr-theme');
+          var prefersLight =
+            window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+          var resolvedTheme =
+            savedTheme === 'light' || savedTheme === 'dark'
+              ? savedTheme
+              : prefersLight
+                ? 'light'
+                : 'dark';
+          var root = document.documentElement;
+          root.classList.remove('light', 'dark');
+          root.classList.add(resolvedTheme);
+          root.setAttribute('data-theme', resolvedTheme);
+
+          var savedLang = localStorage.getItem('zikr-lang');
+          var resolvedLang =
+            savedLang === 'ar' || savedLang === 'en' || savedLang === 'am' ? savedLang : 'ar';
+          root.lang = resolvedLang;
+          root.dir = resolvedLang === 'ar' ? 'rtl' : 'ltr';
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ZIKR",
+        "inLanguage": ["ar", "en", "am"],
+        "description": "The official website for ZIKR, an Islamic remembrance application designed with simplicity, clarity, and calm visual focus."
+      }
+    </script>
+  </head>
+  <body class="antialiased selection:bg-emerald-500/20 selection:text-emerald-400">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
