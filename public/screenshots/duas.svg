@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050c09"/>
+  <!-- Top Bar -->
+  <circle cx="486" cy="48" r="26" fill="#0d2119"/>
+  <path d="M478 48 L494 48 M487 41 L494 48 L487 55" stroke="#28cc88" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="270" y="48" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="25" font-weight="700">أدعية القرآن</text>
+  <text x="270" y="96" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16">أدعية وردت في القرآن الكريم</text>
+  <circle cx="54" cy="48" r="26" fill="#0d2119"/><rect x="47" y="38" width="14" height="20" rx="2" fill="none" stroke="#8ea69b" stroke-width="2"/>
+  <circle cx="118" cy="48" r="26" fill="#0d2119"/><circle cx="116" cy="46" r="7" fill="none" stroke="#8ea69b" stroke-width="2"/><line x1="121" y1="51" x2="127" y2="57" stroke="#8ea69b" stroke-width="2"/>
+
+  <!-- Dua Card 1 -->
+  <g transform="translate(22 128)">
+    <rect x="0" y="0" width="496" height="266" rx="26" fill="#0c1b15" stroke="#1b3a2e" stroke-width="1.3"/>
+    <text x="466" y="64" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَآ ۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ</text>
+    <text x="466" y="122" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">ٱلرَّحِيمُ</text>
+    <text x="444" y="216" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">📋 نسخ</text>
+    <text x="330" y="216" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">🔗 مشاركة</text>
+    <text x="220" y="216" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">↗ تفاصيل</text>
+    <text x="52" y="218" text-anchor="middle" fill="#9cb3a8" font-size="20">♡</text>
+  </g>
+
+  <!-- Dua Card 2 -->
+  <g transform="translate(22 420)">
+    <rect x="0" y="0" width="496" height="334" rx="26" fill="#0c1b15" stroke="#1b3a2e" stroke-width="1.3"/>
+    <rect x="314" y="26" width="154" height="38" rx="14" fill="#1d2418" stroke="#4d492c" stroke-width="1.2"/>
+    <text x="391" y="51" text-anchor="middle" fill="#e6c875" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">سورة البقرة • 2:201</text>
+    <text x="28" y="50" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="600">المؤمنون</text>
+    <text x="466" y="132" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْءَاخِرَةِ حَسَنَةً</text>
+    <text x="466" y="192" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">وَقِنَا عَذَابَ ٱلنَّارِ</text>
+    <text x="444" y="284" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">📋 نسخ</text>
+    <text x="330" y="284" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">🔗 مشاركة</text>
+    <text x="220" y="284" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">↗ تفاصيل</text>
+    <text x="52" y="286" text-anchor="middle" fill="#9cb3a8" font-size="20">♡</text>
+  </g>
+
+  <!-- Dua Card 3 -->
+  <g transform="translate(22 780)">
+    <rect x="0" y="0" width="496" height="334" rx="26" fill="#0c1b15" stroke="#1b3a2e" stroke-width="1.3"/>
+    <rect x="314" y="26" width="154" height="38" rx="14" fill="#1d2418" stroke="#4d492c" stroke-width="1.2"/>
+    <text x="391" y="51" text-anchor="middle" fill="#e6c875" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">سورة البقرة • 2:250</text>
+    <text x="28" y="50" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="600">طالوت والمؤمنون</text>
+    <text x="466" y="132" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا</text>
+    <text x="466" y="192" text-anchor="start" fill="#ffffff" font-family="Amiri Quran, Amiri, serif" font-size="25" font-weight="700">عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ</text>
+    <text x="444" y="284" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">📋 نسخ</text>
+    <text x="330" y="284" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">🔗 مشاركة</text>
+    <text x="220" y="284" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">↗ تفاصيل</text>
+    <text x="52" y="286" text-anchor="middle" fill="#9cb3a8" font-size="20">♡</text>
+  </g>
+</svg>

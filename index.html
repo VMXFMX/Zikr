@@ -6,7 +6,7 @@
     <title>ZIKR — أكثر من ذكر | الموقع الرسمي</title>
     <meta
       name="description"
-      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأذكار، وكتب، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
     />
     <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#FAF8F4" media="(prefers-color-scheme: light)" />
@@ -17,37 +17,74 @@
     <meta property="og:title" content="ZIKR — أكثر من ذكر | الموقع الرسمي" />
     <meta
       property="og:description"
-      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأذكار، وكتب، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
     />
-    <meta property="og:image" content="/src/assets/images/zikr_logo_pfp_1791617547914.jpg" />
+    <meta property="og:image" content="/zikr-logo.svg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ZIKR — أكثر من ذكر | الموقع الرسمي" />
     <meta
       name="twitter:description"
-      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
+      content="ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأذكار، وكتب، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى."
     />
-    <meta name="twitter:image" content="/src/assets/images/zikr_logo_pfp_1791617547914.jpg" />
+    <meta name="twitter:image" content="/zikr-logo.svg" />
 
     <!-- Official ZIKR Logo / PFP Favicon & Apple Touch Icon -->
     <link
       rel="icon"
-      type="image/jpeg"
-      href="/src/assets/images/zikr_logo_pfp_1791617547914.jpg"
+      type="image/svg+xml"
+      href="/zikr-logo.svg"
     />
     <link
       rel="apple-touch-icon"
-      href="/src/assets/images/zikr_logo_pfp_1791617547914.jpg"
+      href="/zikr-logo.svg"
     />
 
-    <!-- Fonts: Plus Jakarta Sans (Latin), IBM Plex Sans Arabic & Amiri (Arabic), Noto Sans Ethiopic (Amharic) -->
+    <!-- Fonts: Plus Jakarta Sans (Latin), IBM Plex Sans Arabic, Amiri & Amiri Quran (Arabic), Noto Sans Ethiopic (Amharic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Guard Against External Third-Party Extension Crashes & Timeouts -->
+    <script>
+      (function () {
+        function isExtensionError(msg, src, err) {
+          var text = (msg || '') + ' ' + (src || '') + ' ' + (err && (err.stack || err.message) || '');
+          return (
+            text.indexOf('chrome-extension://') !== -1 ||
+            text.indexOf('moz-extension://') !== -1 ||
+            text.indexOf('chrome: call method') !== -1
+          );
+        }
+        window.addEventListener(
+          'error',
+          function (e) {
+            if (isExtensionError(e.message, e.filename, e.error)) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+              return true;
+            }
+          },
+          true
+        );
+        window.addEventListener(
+          'unhandledrejection',
+          function (e) {
+            var reason = e.reason;
+            var text = (reason && (reason.stack || reason.message || String(reason))) || '';
+            if (isExtensionError(text, '', reason)) {
+              e.preventDefault();
+              e.stopImmediatePropagation();
+            }
+          },
+          true
+        );
+      })();
+    </script>
 
     <!-- Zero-flash Theme & Language Initialization -->
     <script>

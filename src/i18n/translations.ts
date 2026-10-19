@@ -87,7 +87,16 @@ export interface TranslationContent {
       zoomAria: string;
       closeZoomAria: string;
       items: {
-        id: 'home' | 'quran-mushaf' | 'quran-reading' | 'quran-cards' | 'azkar' | 'sebha';
+        id:
+          | 'quran-mushaf-index'
+          | 'quran-surahs'
+          | 'azkar'
+          | 'day-night'
+          | 'sebha'
+          | 'books'
+          | 'duas'
+          | 'qibla'
+          | 'settings';
         label: string;
         caption: string;
       }[];
@@ -126,6 +135,25 @@ export interface TranslationContent {
     navigationHeading: string;
     languageHeading: string;
     appearanceHeading: string;
+    socialsHeading?: string;
+  };
+  socials: {
+    sectionIndex: string;
+    heading: string;
+    subtitle: string;
+    connectWithUs: string;
+    directEmailLabel: string;
+    visitChannel: string;
+    copyLink: string;
+    copied: string;
+    customizeButton: string;
+    modalTitle: string;
+    modalDescription: string;
+    urlPlaceholder: string;
+    handlePlaceholder: string;
+    save: string;
+    cancel: string;
+    reset: string;
   };
 }
 
@@ -134,7 +162,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
     meta: {
       title: 'ZIKR — أكثر من ذكر | الموقع الرسمي',
       description:
-        'ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى.',
+        'ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأذكار، وكتب، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى.',
     },
     a11y: {
       skipToContent: 'الانتقال إلى المحتوى الرئيسي',
@@ -160,36 +188,36 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       kicker: 'تجربة إسلامية متكاملة',
       headline: 'أكثر من ذكر',
       description:
-        'ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى.',
+        'ZIKR تجربة إسلامية تجمع بين القرآن الكريم، وأذكار، وكتب، ضمن تجربة تهتم بوضوح النص وسهولة الوصول إلى المحتوى.',
       primaryCta: 'اكتشف مميزات ZIKR',
       secondaryCta: 'تحميل التطبيق',
       availabilityNote: 'حالة إصدار أندرويد',
       comingSoonStatus: 'التطبيق قريبًا',
       visualCard: {
         sectionLabel: 'وضوح النص وسهولة الوصول إلى المحتوى',
-        arabicSampleTitle: 'القرآن الكريم · الأذكار · الكتب الإسلامية',
-        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ',
+        arabicSampleTitle: 'القرآن الكريم · أذكار · كتب',
+        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ۝٢٨',
         arabicSampleSubtext: 'تصميم هادئ يضع وضوح المحتوى وسهولة القراءة في المقام الأول',
-        pillars: ['القرآن الكريم', 'أنماط القراءة', 'اليوم والليلة', 'الكتب الإسلامية'],
+        pillars: ['القرآن الكريم', 'أذكار', 'اليوم والليلة', 'كتب'],
       },
     },
     intro: {
       sectionIndex: '01. نظرة عامة',
       heading: 'تجربة إسلامية متكاملة',
       description:
-        'يجمع ZIKR بين قراءة القرآن الكريم، والقراءة الميسّرة، والقراءة المستمرة، والأذكار، والكتب الإسلامية، ضمن تجربة منظّمة تهتم بوضوح المحتوى وسهولة استخدامه.',
+        'يجمع ZIKR بين قراءة القرآن الكريم، والقراءة الميسّرة، والقراءة المستمرة، وأذكار، وكتب، ضمن تجربة منظّمة تهتم بوضوح المحتوى وسهولة استخدامه.',
       highlights: [
         {
           title: 'وضوح النص العربي',
           summary: 'عناية فائقة بالمقروئية وتوازن الخطوط لتقديم تجربة قراءة مريحة وهادئة.',
         },
         {
-          title: 'تنوع أنماط القراءة',
+          title: 'تنوع أذكار',
           summary: 'الجمع بين القراءة الميسّرة لراحة العين والقراءة المستمرة للحفاظ على تسلسل النص.',
         },
         {
           title: 'تنظيم واضح للمحتوى',
-          summary: 'أقسام مرتبة تتيح الوصول المباشر إلى المصحف، وأذكار اليوم والليلة، والكتب الإسلامية.',
+          summary: 'أقسام مرتبة تتيح الوصول المباشر إلى المصحف، وأذكار اليوم والليلة، وكتب.',
         },
       ],
       exploreFeaturesCta: 'استعرض المميزات الخمس بالتفصيل',
@@ -197,41 +225,56 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         sectionIndex: 'معاينة التطبيق',
         heading: 'لقطات شاشة من تطبيق ZIKR للأندرويد',
         subtitle:
-          'استعرض واجهات تطبيق ZIKR الفعلية، بما في ذلك الشاشة الرئيسية، وأنماط قراءة القرآن الكريم، وصفحة الأذكار، والمسبحة الإلكترونية.',
+          'جولة بصرية في واجهات تطبيق ZIKR الفعلية، تستعرض قارئ القرآن الكريم، وأبواب الأذكار، ومسار اليوم والليلة، والسبحة، وكتب، وأدعية القرآن، واتجاه القبلة، والإعدادات.',
         prevAria: 'اللقطة السابقة',
         nextAria: 'اللقطة التالية',
         zoomAria: 'تكبير لقطة الشاشة',
         closeZoomAria: 'إغلاق المعاينة المكبّرة',
         items: [
           {
-            id: 'home',
-            label: 'الشاشة الرئيسية',
-            caption: 'وصول سريع إلى القرآن الكريم والأذكار والمسبحة والكتب الإسلامية',
+            id: 'quran-mushaf-index',
+            label: 'القرآن الكريم — المصحف والفهرس',
+            caption: 'تجربة مخصصة لقراءة القرآن الكريم، مع صفحات المصحف والتنقل بين السور والصفحات بسهولة.',
           },
           {
-            id: 'quran-mushaf',
-            label: 'قارئ القرآن — وضع المصحف',
-            caption: 'عرض صفحات المصحف الشريف بإطار كلاسيكي وتنسيق واضح للآيات',
-          },
-          {
-            id: 'quran-reading',
-            label: 'قارئ القرآن — وضع القراءة',
-            caption: 'قراءة متصلة ومريحة للسورة مع التحكم المباشر بحجم الخط',
-          },
-          {
-            id: 'quran-cards',
-            label: 'قارئ القرآن — وضع البطاقات',
-            caption: 'عرض كل آية في بطاقة مستقلة مع أدوات النسخ والحفظ المرجعي',
+            id: 'quran-surahs',
+            label: 'القرآن الكريم — السور ومتابعة القراءة',
+            caption: 'استعراض السور والأجزاء والمحفوظات مع بطاقة متابعة القراءة للعودة المباشرة إلى موضعك.',
           },
           {
             id: 'azkar',
-            label: 'صفحة الأذكار',
-            caption: 'حصن المسلم وأذكار الصباح والمساء والنوم وبعد الصلاة مع البحث السريع',
+            label: 'الأذكار',
+            caption: 'أذكار الصباح والمساء وأذكار النوم والصلاة والمسجد والوضوء والمنزل والسفر في أبواب منظمة.',
+          },
+          {
+            id: 'day-night',
+            label: 'اليوم والليلة',
+            caption: 'دليلك الإيماني عبر ساعات اليوم والليلة بالصلاة والقرآن والذكر من الاستيقاظ حتى المنام.',
           },
           {
             id: 'sebha',
-            label: 'المسبحة الإلكترونية',
-            caption: 'عداد تسبيح رقمي مع تحديد الهدف ومتابعة المجموع الكلي والدورات المكتملة',
+            label: 'السبحة',
+            caption: 'مسبحة إلكترونية هادئة للتسبيح والذكر مع اختيار الصيغة وتحديد الهدف اليومي.',
+          },
+          {
+            id: 'books',
+            label: 'كتب',
+            caption: 'قراءة الكتب الإسلامية بصيغة واضحة مع حفظ موضع التوقف ومتابعة نسبة الإنجاز.',
+          },
+          {
+            id: 'duas',
+            label: 'أدعية القرآن',
+            caption: 'أدعية مختارة وردت في القرآن الكريم موثقة بالسورة والآية مع النسخ والمشاركة والحفظ.',
+          },
+          {
+            id: 'qibla',
+            label: 'اتجاه القبلة',
+            caption: 'تحديد اتجاه الكعبة المشرفة بدقة بواسطة مستشعرات الجهاز مع عرض الزاوية والمسافة.',
+          },
+          {
+            id: 'settings',
+            label: 'الإعدادات والتنبيهات',
+            caption: 'تحديد الموقع تلقائياً عبر GPS أو يدوياً، وإدارة إشعارات أوقات الصلاة والتذكير قبلها.',
           },
         ],
       },
@@ -251,7 +294,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         {
           id: 'reading-modes',
           number: '02',
-          title: 'أنماط القراءة',
+          title: 'أذكار',
           description: 'نمطان متمايزان للقراءة صُمّما لخدمة وضوح النص أو متابعة التسلسل القرائي:',
           readingModes: [
             {
@@ -279,9 +322,9 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         {
           id: 'books',
           number: '04',
-          title: 'الكتب الإسلامية',
+          title: 'كتب',
           description:
-            'تصفّح الكتب الإسلامية المتاحة في ZIKR ضمن تجربة قراءة تهتم بوضوح النص وسهولة الوصول إلى محتوى الكتاب.',
+            'تصفّح كتب المتاحة في ZIKR ضمن تجربة قراءة تهتم بوضوح النص وسهولة الوصول إلى محتوى الكتاب.',
         },
         {
           id: 'organized',
@@ -296,7 +339,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       sectionIndex: '03. تحميل التطبيق',
       heading: 'اكتشف ZIKR',
       description:
-        'تعرّف على تجربة تجمع بين القرآن الكريم، وأنماط القراءة، والأذكار، والكتب الإسلامية.',
+        'تعرّف على تجربة تجمع بين القرآن الكريم، وأذكار، وكتب.',
       platformLabel: 'نظام التشغيل: Android (APK رسمي)',
       statusLabel: 'حالة التوفر:',
       comingSoon: 'التطبيق قريبًا',
@@ -309,12 +352,12 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
     faq: {
       sectionIndex: '04. الأسئلة الشائعة',
       heading: 'إجابات واضحة حول ZIKR',
-      subtitle: 'معلومات دقيقة حول محتوى التطبيق، وأنماط القراءة، وحالة توفر نسخة أندرويد.',
+      subtitle: 'معلومات دقيقة حول محتوى التطبيق، وأذكار، وحالة توفر نسخة أندرويد.',
       items: [
         {
           question: 'ما الذي يقدّمه تطبيق ZIKR؟',
           answer:
-            'يقدّم ZIKR تجربة إسلامية متكاملة تجمع بين قراءة القرآن الكريم، وأنماط القراءة (القراءة الميسّرة والقراءة المستمرة)، وأذكار اليوم والليلة، والكتب الإسلامية، ضمن أقسام منظّمة وواضحة.',
+            'يقدّم ZIKR تجربة إسلامية متكاملة تجمع بين قراءة القرآن الكريم، وأذكار (القراءة الميسّرة والقراءة المستمرة)، وأذكار اليوم والليلة، وكتب، ضمن أقسام منظّمة وواضحة.',
         },
         {
           question: 'ما الفرق بين القراءة الميسّرة والقراءة المستمرة؟',
@@ -339,6 +382,25 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       navigationHeading: 'التنقل',
       languageHeading: 'اللغة',
       appearanceHeading: 'المظهر',
+      socialsHeading: 'قنوات التواصل والمتابعة',
+    },
+    socials: {
+      sectionIndex: 'روابط التواصل الرسمية',
+      heading: 'تابع زِكْر',
+      subtitle: 'رفيقك اليومي للأذكار',
+      connectWithUs: 'حسابات التواصل الرسمية',
+      directEmailLabel: 'البريد الإلكتروني المباشر',
+      visitChannel: 'زيارة القناة',
+      copyLink: 'نسخ الرابط',
+      copied: 'تم النسخ!',
+      customizeButton: 'تخصيص روابط التواصل',
+      modalTitle: 'تخصيص روابط التواصل الاجتماعي',
+      modalDescription: 'يمكنك تعديل روابط منصاتك أو إضافة روابطك الخاصة لتظهر فورًا في الموقع.',
+      urlPlaceholder: 'https://...',
+      handlePlaceholder: '@اسم_الحساب',
+      save: 'حفظ التغييرات',
+      cancel: 'إلغاء',
+      reset: 'استعادة الروابط الافتراضية',
     },
   },
 
@@ -380,7 +442,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       visualCard: {
         sectionLabel: 'Text clarity and effortless access to content',
         arabicSampleTitle: 'Holy Quran · Azkar · Islamic Books',
-        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ',
+        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ۝٢٨',
         arabicSampleSubtext: 'A calm interface placing content clarity and comfortable reading first',
         pillars: ['The Holy Quran', 'Reading Modes', 'Day & Night', 'Islamic Books'],
       },
@@ -409,41 +471,56 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         sectionIndex: 'App Preview',
         heading: 'ZIKR Android App Screenshots',
         subtitle:
-          'Preview the real ZIKR Android interface across the Home screen, Quran reader modes, Azkar categories, and the Electronic Sebha.',
+          'An editorial tour through the real ZIKR Android interface across the Holy Quran reader, Adhkar categories, Day & Night path, Electronic Sebha, Books, Quranic Duas, Qibla compass, and Settings.',
         prevAria: 'Previous screenshot',
         nextAria: 'Next screenshot',
         zoomAria: 'Enlarge screenshot',
         closeZoomAria: 'Close enlarged preview',
         items: [
           {
-            id: 'home',
-            label: 'Home Screen',
-            caption: 'Direct access to the Holy Quran, Azkar, Sebha, and Islamic books',
+            id: 'quran-mushaf-index',
+            label: 'The Holy Quran — Mushaf & Index',
+            caption: 'A dedicated experience for reading the Holy Quran, with Mushaf pages and effortless navigation across Surahs and pages.',
           },
           {
-            id: 'quran-mushaf',
-            label: 'Quran Reader — Mushaf Mode',
-            caption: 'Classic framed Mushaf page layout with centered Quranic script',
-          },
-          {
-            id: 'quran-reading',
-            label: 'Quran Reader — Reading Mode',
-            caption: 'Continuous verse flow with instant font-size adjustment controls',
-          },
-          {
-            id: 'quran-cards',
-            label: 'Quran Reader — Cards Mode',
-            caption: 'Individual verse cards featuring quick copy and bookmark actions',
+            id: 'quran-surahs',
+            label: 'The Holy Quran — Surahs & Continue Reading',
+            caption: 'Browse all 114 Surahs, Juz, and bookmarks with a one-tap Continue Reading card.',
           },
           {
             id: 'azkar',
-            label: 'Azkar Page',
-            caption: 'Hisn al-Muslim daily remembrances for morning, evening, sleep, and prayer',
+            label: 'Daily Adhkar',
+            caption: 'Morning and evening adhkar alongside organized daily remembrance categories for sleep, prayer, mosque, and travel.',
+          },
+          {
+            id: 'day-night',
+            label: 'Day & Night Path',
+            caption: 'Your daily spiritual guide across 19 stages from waking up until sleep with prayer, Quran, and remembrance.',
           },
           {
             id: 'sebha',
             label: 'Electronic Sebha',
-            caption: 'Digital Tasbih counter with target tracking, total count, and Zikr selector',
+            caption: 'Focused digital Tasbih counter with authentic dhikr phrases and customizable target counts.',
+          },
+          {
+            id: 'books',
+            label: 'Books',
+            caption: 'Read Islamic books with clear typography, saved page positions, and completion progress tracking.',
+          },
+          {
+            id: 'duas',
+            label: 'Quranic Duas',
+            caption: 'Authenticated supplications from the Holy Quran with Surah and ayah references, copy, share, and favorites.',
+          },
+          {
+            id: 'qibla',
+            label: 'Qibla Direction',
+            caption: 'Accurate Kaaba direction compass powered by device sensors with live bearing and distance to Makkah.',
+          },
+          {
+            id: 'settings',
+            label: 'Settings & Prayer Alerts',
+            caption: 'Automatic GPS or manual location detection paired with prayer-time notifications and pre-prayer reminders.',
           },
         ],
       },
@@ -553,6 +630,25 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       navigationHeading: 'Navigation',
       languageHeading: 'Language',
       appearanceHeading: 'Appearance',
+      socialsHeading: 'Official Socials & Connect',
+    },
+    socials: {
+      sectionIndex: 'Official Socials',
+      heading: 'Follow ZIKR',
+      subtitle: 'Your daily companion for Dhikr',
+      connectWithUs: 'Connect With Us',
+      directEmailLabel: 'Direct Email',
+      visitChannel: 'Visit Channel',
+      copyLink: 'Copy Link',
+      copied: 'Copied!',
+      customizeButton: 'Customize Links',
+      modalTitle: 'Customize Social Links',
+      modalDescription: 'Update your social links or custom URLs to display them directly across the website.',
+      urlPlaceholder: 'https://...',
+      handlePlaceholder: '@username',
+      save: 'Save Changes',
+      cancel: 'Cancel',
+      reset: 'Reset to Defaults',
     },
   },
 
@@ -594,7 +690,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       visualCard: {
         sectionLabel: 'የጽሑፍ ግልጽነት እና ቀላል ተደራሽነት',
         arabicSampleTitle: 'ቅዱስ ቁርኣን · አዝካር · ኢስላማዊ መጻሕፍት',
-        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ',
+        arabicSampleVerse: 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ۝٢٨',
         arabicSampleSubtext: 'ለይዘት ግልጽነት እና ለምቹ ንባብ ቅድሚያ የሚሰጥ የተረጋጋ ንድፍ',
         pillars: ['ቅዱስ ቁርኣን', 'የንባብ ስልቶች', 'የቀንና የሌሊት አዝካር', 'ኢስላማዊ መጻሕፍት'],
       },
@@ -623,41 +719,56 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         sectionIndex: 'የመተግበሪያ ቅድመ-እይታ',
         heading: 'የZIKR አንድሮይድ መተግበሪያ ገጽታዎች',
         subtitle:
-          'ዋናውን ገጽ፣ የቁርኣን ንባብ ስልቶችን፣ የአዝካር ክፍሎችን እና ዲጂታል ተስቢህን የሚያሳዩ የZIKR መተግበሪያ ትክክለኛ ገጽታዎችን ይመልከቱ።',
+          'የቅዱስ ቁርኣን ማንበቢያን፣ የአዝካር ክፍሎችን፣ የቀንና የሌሊት መንገድን፣ ዲጂታል መስቢሃን፣ መጻሕፍትን፣ የቁርኣን ዱዓዎችን፣ የቂብላ አቅጣጫን እና ቅንብሮችን የሚያሳዩ ትክክለኛ የZIKR ገጽታዎችን ይመልከቱ።',
         prevAria: 'ቀዳሚ ገጽታ',
         nextAria: 'ቀጣይ ገጽታ',
         zoomAria: 'ገጽታውን አጉላ',
         closeZoomAria: 'የጎላውን ቅድመ-እይታ ዝጋ',
         items: [
           {
-            id: 'home',
-            label: 'ዋና ገጽ (Home)',
-            caption: 'ወደ ቅዱስ ቁርኣን፣ አዝካር፣ መስቢaha እና ኢስላማዊ መጻሕፍት ፈጣን መዳረሻ',
+            id: 'quran-mushaf-index',
+            label: 'ቅዱስ ቁርኣን — ሙስሐፍ እና ማውጫ',
+            caption: 'የሙስሐፍ ገጾችን እና በሱራዎችና በገጾች መካከል በቀላሉ የመዘዋወር አማራጭን ያካተተ የቁርኣን ንባብ ተሞክሮ።',
           },
           {
-            id: 'quran-mushaf',
-            label: 'የቁርኣን አንባቢ — የሙስሐፍ ሁኔታ',
-            caption: 'ክላሲክ የሙስሐፍ ገጽ አቀማመጥ ከጥርት ያለ የአንቀጾች ጽሑፍ ጋር',
-          },
-          {
-            id: 'quran-reading',
-            label: 'የቁርኣን አንባቢ — የንባብ ሁኔታ',
-            caption: 'ተከታታይ የአንቀጾች ንባብ ከፈጣን የፊደል መጠን መቆጣጠሪያ ጋር',
-          },
-          {
-            id: 'quran-cards',
-            label: 'የቁርኣን አንባቢ — የካርድ ሁኔታ',
-            caption: 'እያንዳንዱ አንቀጽ በራሱ ካርድ ከቅጂ እና ምልክት ማድረጊያ መሳሪያዎች ጋር',
+            id: 'quran-surahs',
+            label: 'ቅዱስ ቁርኣን — ሱራዎች እና ንባብ መቀጠያ',
+            caption: '114 ሱራዎችን፣ ጁዞችን እና የተቀመጡ ገጾችን ከፈጣን የንባብ መቀጠያ ካርድ ጋር ይመልከቱ።',
           },
           {
             id: 'azkar',
-            label: 'የአዝካር ገጽ',
-            caption: 'የጧት፣ የማታ፣ የእንቅልፍ እና ከሶላት በኋላ የሚባሉ የሒስኑል ሙስሊም አዝካሮች',
+            label: 'አዝካሮች',
+            caption: 'የጧትና የማታ አዝካሮች እንዲሁም የእንቅልፍ፣ የሶላት፣ የመስጂድ እና የጉዞ አዝካሮች በግልጽ ክፍሎች።',
+          },
+          {
+            id: 'day-night',
+            label: 'የቀንና የሌሊት መንገድ',
+            caption: 'ከመንቃት እስከ መኝታ በሶላት፣ በቁርኣን እና በዚክር የተዋቀረ ባለ 19 ደረጃ ዕለታዊ መመሪያ።',
           },
           {
             id: 'sebha',
             label: 'ዲጂታል መስቢሃ (Sebha)',
-            caption: 'የተስቢህ መቁጠሪያ ከዒላማ መከታተያ፣ ጠቅላላ ድምር እና የዚክር ምርጫ ጋር',
+            caption: 'የተለያዩ የዚክር ቃላትን እና የቁጥር ዒላማዎችን ያካተተ የተረጋጋ ዲጂታል የተስቢህ መቁጠሪያ።',
+          },
+          {
+            id: 'books',
+            label: 'መጻሕፍት',
+            caption: 'ኢስላማዊ መጻሕፍትን በግልጽ አቀራረብ ማንበቢያ፤ ያቆሙበትን ገጽ እና የንባብ ሂደትዎን በመቶኛ ያሳያል።',
+          },
+          {
+            id: 'duas',
+            label: 'የቁርኣን ዱዓዎች',
+            caption: 'በቅዱስ ቁርኣን ውስጥ የተጠቀሱ ዱዓዎች ከሱራና አንቀጽ ማጣቀሻ እንዲሁም ከቅጂና ማጋሪያ መሳሪያዎች ጋር።',
+          },
+          {
+            id: 'qibla',
+            label: 'የቂብላ አቅጣጫ',
+            caption: 'በመሳሪያዎ ሴንሰሮች የካዕባን አቅጣጫ፣ ማዕዘን እና እስከ መካ ያለውን ርቀት በትክክል የሚያሳይ ኮምፓስ።',
+          },
+          {
+            id: 'settings',
+            label: 'ቅንብሮች እና ማሳሰቢያዎች',
+            caption: 'በGPS ወይም በእጅ አካባቢን መለየት እና የሶላት ሰዓት ማሳወቂያዎችን ከቅድመ-ማስታወሻ ጋር ማስተዳደር።',
           },
         ],
       },
@@ -677,7 +788,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         {
           id: 'reading-modes',
           number: '02',
-          title: 'የንባብ ስልቶች (أنماط القراءة)',
+          title: 'የንባብ ስልቶች (أذكار)',
           description: 'ለጽሑፍ ግልጽነት እና ለንባብ ቅደም ተከተል ታስበው የተዘጋጁ ሁለት የተለያዩ የንባብ ስልቶች፦',
           readingModes: [
             {
@@ -704,7 +815,7 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
         {
           id: 'books',
           number: '04',
-          title: 'ኢስላማዊ መጻሕፍት (الكتب الإسلامية)',
+          title: 'ኢስላማዊ መጻሕፍት (كتب)',
           description:
             'በZIKR ውስጥ የሚገኙ ኢስላማዊ መጻሕፍትን ለጽሑፍ ግልጽነት እና ወደ መጽሐፉ ይዘት በቀላሉ ለመድረስ ትኩረት በሚሰጥ የንባብ ተሞክሮ ይመልከቱ።',
         },
@@ -764,6 +875,25 @@ export const TRANSLATIONS: Record<LanguageCode, TranslationContent> = {
       navigationHeading: 'ማውጫ',
       languageHeading: 'ቋንቋ',
       appearanceHeading: 'ገጽታ',
+      socialsHeading: 'ይፋዊ ማህበራዊ ገጾችና ግንኙነት',
+    },
+    socials: {
+      sectionIndex: 'ይፋዊ የማህበራዊ ገጾች',
+      heading: 'ዚክርን ይከተሉ',
+      subtitle: 'ለዕለታዊ አዝካር ታማኝ ጓደኛዎ',
+      connectWithUs: 'ከእኛ ጋር ይገናኙ',
+      directEmailLabel: 'ቀጥታ ኢሜይል',
+      visitChannel: 'ገጹን ይጎብኙ',
+      copyLink: 'ሊንኩን ቅዳ',
+      copied: 'ተቀድቷል!',
+      customizeButton: 'ሊንኮችን ያብጁ',
+      modalTitle: 'የማህበራዊ ገጽ ሊንኮችን ማበጀት',
+      modalDescription: 'በድረ-ገጹ ላይ የሚታዩትን የማህበራዊ ገጾች ሊንኮችና መለያዎች እንደ ፍላጎትዎ ይቀይሩ።',
+      urlPlaceholder: 'https://...',
+      handlePlaceholder: '@መለያ',
+      save: 'ለውጦችን መዝግብ',
+      cancel: 'ሰርዝ',
+      reset: 'ወደ ነባሪ መልስ',
     },
   },
 };

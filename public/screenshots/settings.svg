@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050b09"/>
+  <!-- Top Bar -->
+  <path d="M478 44 L496 44 M489 36 L496 44 L489 52" stroke="#dce7e2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <text x="446" y="42" text-anchor="start" fill="#f5f8f6" font-family="IBM Plex Sans Arabic, sans-serif" font-size="27" font-weight="700">الإعدادات</text>
+  <text x="446" y="68" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">تخصيص التطبيق وتفضيلات القراءة والصوت</text>
+
+  <!-- Location Settings Card -->
+  <g transform="translate(22 86)">
+    <rect x="0" y="0" width="496" height="366" rx="28" fill="#0b1512" stroke="#162922" stroke-width="1.2"/>
+    <text x="470" y="54" text-anchor="start" fill="#eef4f1" font-family="IBM Plex Sans Arabic, sans-serif" font-size="17" font-weight="700">طريقة تحديد الموقع:</text>
+    <!-- Auto GPS Box -->
+    <rect x="258" y="72" width="212" height="84" rx="20" fill="#0f3325" stroke="#28cc88" stroke-width="1.6"/>
+    <text x="364" y="106" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16" font-weight="700">🎯 الموقع التلقائي</text>
+    <text x="364" y="134" text-anchor="middle" fill="#9cb5aa" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">عبر GPS وموقع الجهاز</text>
+    <!-- Manual Box -->
+    <rect x="26" y="72" width="212" height="84" rx="20" fill="#0e1b17" stroke="#1c332b" stroke-width="1.2"/>
+    <text x="132" y="106" text-anchor="middle" fill="#dce7e2" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16" font-weight="700">📍 التحديد اليدوي</text>
+    <text x="132" y="134" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">اختيار الدولة والمدينة</text>
+
+    <!-- Detected Location Subcard -->
+    <rect x="26" y="174" width="444" height="172" rx="22" fill="#0e1a16" stroke="#182e26" stroke-width="1"/>
+    <text x="450" y="210" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16.5" font-weight="700">تم رصد موقعك الحالي تلقائياً</text>
+    <text x="450" y="236" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">المنطقة الزمنية: Africa/Addis_Ababa</text>
+    <text x="450" y="260" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">(GMT+3)</text>
+    <rect x="46" y="206" width="96" height="40" rx="20" fill="#0f2e22" stroke="#23664b" stroke-width="1.2"/>
+    <text x="94" y="232" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="600">↻ تحديث</text>
+    <text x="450" y="298" text-anchor="start" fill="#7c9489" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">يتم حساب أوقات الصلاة تلقائياً بناءً على إحداثيات GPS الفعلية</text>
+    <text x="450" y="322" text-anchor="start" fill="#7c9489" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">ومنطقة جهازك الزمنية بدقة تامة.</text>
+  </g>
+
+  <!-- Notifications Card -->
+  <g transform="translate(22 472)">
+    <rect x="0" y="0" width="496" height="546" rx="28" fill="#0b1512" stroke="#162922" stroke-width="1.2"/>
+    <rect x="420" y="22" width="52" height="52" rx="16" fill="#0f2c21"/>
+    <path d="M446 35 C440 35 436 40 436 46 L436 54 L433 57 L459 57 L456 54 L456 46 C456 40 452 35 446 35 Z" fill="#28cc88"/>
+    <text x="402" y="55" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">الإشعارات</text>
+
+    <text x="470" y="108" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">الإشعارات</text>
+    <text x="470" y="136" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">التنبيهات مفعلة لجميع الأقسام</text>
+    <rect x="26" y="96" width="72" height="40" rx="20" fill="#28cc88"/>
+    <circle cx="46" cy="116" r="15" fill="#ffffff"/>
+
+    <text x="470" y="182" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16" font-weight="700">أنواع الإشعارات</text>
+
+    <rect x="24" y="202" width="448" height="326" rx="22" fill="#0e1a16" stroke="#182e26" stroke-width="1"/>
+    <text x="450" y="246" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">أوقات الصلاة</text>
+    <text x="450" y="274" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14">تنبيه خاشع قبل دخول وقت كل صلاة</text>
+    <rect x="46" y="232" width="72" height="40" rx="20" fill="#28cc88"/>
+    <circle cx="66" cy="252" r="15" fill="#ffffff"/>
+
+    <text x="450" y="320" text-anchor="start" fill="#eef4f1" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">التذكير قبل الصلاة</text>
+    <rect x="332" y="340" width="120" height="44" rx="16" fill="#0f3325" stroke="#28cc88" stroke-width="1.2"/>
+    <text x="392" y="368" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="700">قبل ١٥ دقيقة</text>
+    <rect x="204" y="340" width="116" height="44" rx="16" fill="#0b1512" stroke="#1d332b" stroke-width="1"/>
+    <text x="262" y="368" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">قبل ٢٠ دقيقة</text>
+
+    <!-- Next Prayer Banner -->
+    <rect x="46" y="406" width="404" height="102" rx="20" fill="#0d2130" stroke="#1b435e" stroke-width="1.3"/>
+    <text x="430" y="442" text-anchor="start" fill="#9cb5c4" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">التذكير القادم</text>
+    <text x="430" y="482" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">المغرب</text>
+    <rect x="64" y="424" width="92" height="28" rx="10" fill="#0f3528" stroke="#23664b" stroke-width="1"/>
+    <text x="110" y="443" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5" font-weight="600">الصلاة القادمة</text>
+    <text x="66" y="482" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="17" font-weight="700">بعد ساعتين و٧ دقائق</text>
+  </g>
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">كتب</text>
+      </g>
+    </g>
+</svg>

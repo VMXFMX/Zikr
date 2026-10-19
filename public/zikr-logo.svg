@@ -1,0 +1,952 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- 1. Matte Charcoal-Black Square Studio Background -->
+    <radialGradient id="studioBg" cx="32%" cy="24%" r="82%">
+      <stop offset="0%" stop-color="#222527" />
+      <stop offset="45%" stop-color="#131516" />
+      <stop offset="100%" stop-color="#08090a" />
+    </radialGradient>
+
+    <!-- 2. Smoked Frosted Glass Medallion Plate -->
+    <linearGradient id="smokedGlassPlate" x1="18%" y1="12%" x2="84%" y2="88%">
+      <stop offset="0%" stop-color="#3c4042" />
+      <stop offset="46%" stop-color="#222527" />
+      <stop offset="100%" stop-color="#121415" />
+    </linearGradient>
+
+    <linearGradient id="outerGlassRim" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#7c8285" stop-opacity="0.72" />
+      <stop offset="50%" stop-color="#454a4c" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#232628" stop-opacity="0.65" />
+    </linearGradient>
+
+    <!-- 3. Warm Golden Rim Halo Behind Inner Ring -->
+    <radialGradient id="innerRimHalo" cx="50%" cy="50%" r="25%">
+      <stop offset="0%" stop-color="#ffefc8" stop-opacity="0" />
+      <stop offset="62%" stop-color="#f7dca4" stop-opacity="0.18" />
+      <stop offset="74%" stop-color="#f8dfa8" stop-opacity="0.58" />
+      <stop offset="86%" stop-color="#d9b273" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#121415" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 4. Center Smoked Dome Surface -->
+    <radialGradient id="centerDome" cx="46%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#626464" />
+      <stop offset="48%" stop-color="#434647" />
+      <stop offset="82%" stop-color="#2c2f30" />
+      <stop offset="100%" stop-color="#202324" />
+    </radialGradient>
+
+    <radialGradient id="crescentAmbientGlow" cx="50%" cy="48.5%" r="16%">
+      <stop offset="0%" stop-color="#ffefd1" stop-opacity="0.52" />
+      <stop offset="52%" stop-color="#ebd09e" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#434647" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 5. Emerald Cat's-Eye Spherical Bead Gradients -->
+    <radialGradient id="emeraldBeadBase" cx="38%" cy="34%" r="65%">
+      <stop offset="0%" stop-color="#1d6d40" />
+      <stop offset="48%" stop-color="#0b3b20" />
+      <stop offset="82%" stop-color="#052010" />
+      <stop offset="100%" stop-color="#021008" />
+    </radialGradient>
+
+    <linearGradient id="emeraldCatsEye" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#072815" stop-opacity="0" />
+      <stop offset="35%" stop-color="#2c8e57" stop-opacity="0.72" />
+      <stop offset="50%" stop-color="#63c78d" stop-opacity="0.95" />
+      <stop offset="65%" stop-color="#247c4a" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#072815" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="emeraldSphereShade" cx="36%" cy="32%" r="66%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="62%" stop-color="#04190d" stop-opacity="0.18" />
+      <stop offset="88%" stop-color="#020d06" stop-opacity="0.62" />
+      <stop offset="100%" stop-color="#194d2e" stop-opacity="0.38" />
+    </radialGradient>
+
+    <radialGradient id="beadSpecular" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88" />
+      <stop offset="55%" stop-color="#d4f5e2" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#76cba0" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 6. Cream/Ivory Cardinal Divider Bead Gradients -->
+    <linearGradient id="creamBeadGrad" x1="15%" y1="20%" x2="88%" y2="82%">
+      <stop offset="0%" stop-color="#fff8e8" />
+      <stop offset="38%" stop-color="#f0dbb6" />
+      <stop offset="76%" stop-color="#bf9e6e" />
+      <stop offset="100%" stop-color="#7c623d" />
+    </linearGradient>
+
+    <radialGradient id="creamHighlight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#fff8e8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 7. Metallic Silver-Bronze Spacer Disc Gradient -->
+    <linearGradient id="spacerMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#474943" />
+      <stop offset="26%" stop-color="#f2e6cf" />
+      <stop offset="52%" stop-color="#9e9583" />
+      <stop offset="78%" stop-color="#d8ccb4" />
+      <stop offset="100%" stop-color="#252825" />
+    </linearGradient>
+
+    <!-- 8. Luminous 3D Cream-Gold Crescent & Arabic Typography Gradients -->
+    <linearGradient id="crescentBodyGrad" x1="22%" y1="15%" x2="80%" y2="88%">
+      <stop offset="0%" stop-color="#fffdf8" />
+      <stop offset="45%" stop-color="#fae9c8" />
+      <stop offset="82%" stop-color="#dfc08e" />
+      <stop offset="100%" stop-color="#be9960" />
+    </linearGradient>
+
+    <linearGradient id="azkarGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8e5be" />
+      <stop offset="52%" stop-color="#e4c590" />
+      <stop offset="100%" stop-color="#bd9860" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="plateShadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="10" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.78" />
+    </filter>
+
+    <filter id="beadDropShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3.2" flood-color="#000000" flood-opacity="0.72" />
+    </filter>
+
+    <filter id="crescentGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="11" flood-color="#f8dfa6" flood-opacity="0.58" />
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#191610" flood-opacity="0.45" />
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#0e0d0a" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Studio Charcoal-Black Background -->
+  <rect width="1000" height="1000" fill="url(#studioBg)" />
+
+  <!-- Outer Smoked-Glass Medallion Disc -->
+  <g filter="url(#plateShadow)">
+    <circle cx="500" cy="500" r="342" fill="url(#smokedGlassPlate)" stroke="url(#outerGlassRim)" stroke-width="2.5" />
+    <circle cx="500" cy="500" r="337" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" />
+  </g>
+
+  <!-- Subtle Etched Concentric Rings & Geometric Arabesque Linework -->
+  <circle cx="500" cy="500" r="264" fill="none" stroke="#d9c7a8" stroke-opacity="0.22" stroke-width="1.1" />
+  <circle cx="500" cy="500" r="251" fill="none" stroke="#d9c7a8" stroke-opacity="0.18" stroke-width="1" />
+  <circle cx="500" cy="500" r="245" fill="none" stroke="#d9c7a8" stroke-opacity="0.14" stroke-width="0.8" />
+  
+    <g transform="rotate(0 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(45 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(90 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(135 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(180 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(225 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(270 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+    <g transform="rotate(315 500 500)" opacity="0.34" stroke="#d9c7a8" stroke-width="1.15" fill="none">
+      <path d="M 500 226 L 516 244 L 500 262 L 484 244 Z" />
+      <path d="M 500 231 L 511 244 L 500 257 L 489 244 Z" />
+      <path d="M 484 244 Q 470 244 462 235" />
+      <path d="M 516 244 Q 530 244 538 235" />
+      <path d="M 484 244 Q 470 244 462 253" />
+      <path d="M 516 244 Q 530 244 538 253" />
+      <circle cx="500" cy="244" r="2.2" fill="#d9c7a8" stroke="none" />
+    </g>
+
+  <!-- Warm Golden Halo Radiating from Inner Medallion Ring -->
+  <circle cx="500" cy="500" r="245" fill="url(#innerRimHalo)" />
+
+  <!-- Outer Misbaha Prayer Bead Ring (32 Emerald Beads + 4 Cream Beads + Metallic Spacers) -->
+  <circle cx="500" cy="500" r="296" fill="none" stroke="#181c1a" stroke-width="3" opacity="0.65" />
+  
+      <g transform="translate(520.39 204.7) rotate(3.95)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(528.11 205.34) rotate(5.45)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(794.66 471.89) rotate(84.55)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(795.3 479.61) rotate(86.05)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(706.18 287.61) rotate(44.15)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(712.39 293.82) rotate(45.85)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="554.45" cy="209.05" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(554.45 209.05) rotate(-17.4)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="554.45" cy="209.05" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="547.63" cy="201.81" rx="5.96" ry="4.05" transform="rotate(-32 547.63 201.81)" fill="url(#beadSpecular)" />
+      <circle cx="545.93" cy="200.53" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="600.51" cy="221.59" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(600.51 221.59) rotate(-8.149999999999999)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="600.51" cy="221.59" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="593.69" cy="214.35" rx="5.96" ry="4.05" transform="rotate(-32 593.69 214.35)" fill="url(#beadSpecular)" />
+      <circle cx="591.99" cy="213.07" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="643.96" cy="241.36" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(643.96 241.36) rotate(1.1000000000000014)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="643.96" cy="241.36" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="637.14" cy="234.12" rx="5.96" ry="4.05" transform="rotate(-32 637.14 234.12)" fill="url(#beadSpecular)" />
+      <circle cx="635.44" cy="232.84" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="683.66" cy="267.87" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(683.66 267.87) rotate(10.350000000000001)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="683.66" cy="267.87" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="676.84" cy="260.63" rx="5.96" ry="4.05" transform="rotate(-32 676.84 260.63)" fill="url(#beadSpecular)" />
+      <circle cx="675.14" cy="259.35" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="790.95" cy="445.55" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(790.95 445.55) rotate(51.400000000000006)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="790.95" cy="445.55" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="784.13" cy="438.31" rx="5.96" ry="4.05" transform="rotate(-32 784.13 438.31)" fill="url(#beadSpecular)" />
+      <circle cx="782.43" cy="437.03" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="778.41" cy="399.49" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(778.41 399.49) rotate(42.150000000000006)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="778.41" cy="399.49" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="771.59" cy="392.25" rx="5.96" ry="4.05" transform="rotate(-32 771.59 392.25)" fill="url(#beadSpecular)" />
+      <circle cx="769.89" cy="390.97" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="758.64" cy="356.04" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(758.64 356.04) rotate(32.9)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="758.64" cy="356.04" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="751.82" cy="348.8" rx="5.96" ry="4.05" transform="rotate(-32 751.82 348.8)" fill="url(#beadSpecular)" />
+      <circle cx="750.12" cy="347.52" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="732.13" cy="316.34" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(732.13 316.34) rotate(23.65)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="732.13" cy="316.34" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="725.31" cy="309.1" rx="5.96" ry="4.05" transform="rotate(-32 725.31 309.1)" fill="url(#beadSpecular)" />
+      <circle cx="723.61" cy="307.82" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(795.3 520.39) rotate(93.95)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(794.66 528.11) rotate(95.45)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(528.11 794.66) rotate(174.55)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(520.39 795.3) rotate(176.05)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(712.39 706.18) rotate(134.15)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(706.18 712.39) rotate(135.85)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="790.95" cy="554.45" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(790.95 554.45) rotate(72.6)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="790.95" cy="554.45" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="784.13" cy="547.21" rx="5.96" ry="4.05" transform="rotate(-32 784.13 547.21)" fill="url(#beadSpecular)" />
+      <circle cx="782.43" cy="545.93" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="778.41" cy="600.51" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(778.41 600.51) rotate(81.85)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="778.41" cy="600.51" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="771.59" cy="593.27" rx="5.96" ry="4.05" transform="rotate(-32 771.59 593.27)" fill="url(#beadSpecular)" />
+      <circle cx="769.89" cy="591.99" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="758.64" cy="643.96" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(758.64 643.96) rotate(91.1)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="758.64" cy="643.96" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="751.82" cy="636.72" rx="5.96" ry="4.05" transform="rotate(-32 751.82 636.72)" fill="url(#beadSpecular)" />
+      <circle cx="750.12" cy="635.44" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="732.13" cy="683.66" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(732.13 683.66) rotate(100.35)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="732.13" cy="683.66" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="725.31" cy="676.42" rx="5.96" ry="4.05" transform="rotate(-32 725.31 676.42)" fill="url(#beadSpecular)" />
+      <circle cx="723.61" cy="675.14" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="554.45" cy="790.95" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(554.45 790.95) rotate(141.4)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="554.45" cy="790.95" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="547.63" cy="783.71" rx="5.96" ry="4.05" transform="rotate(-32 547.63 783.71)" fill="url(#beadSpecular)" />
+      <circle cx="545.93" cy="782.43" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="600.51" cy="778.41" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(600.51 778.41) rotate(132.15)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="600.51" cy="778.41" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="593.69" cy="771.17" rx="5.96" ry="4.05" transform="rotate(-32 593.69 771.17)" fill="url(#beadSpecular)" />
+      <circle cx="591.99" cy="769.89" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="643.96" cy="758.64" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(643.96 758.64) rotate(122.9)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="643.96" cy="758.64" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="637.14" cy="751.4" rx="5.96" ry="4.05" transform="rotate(-32 637.14 751.4)" fill="url(#beadSpecular)" />
+      <circle cx="635.44" cy="750.12" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="683.66" cy="732.13" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(683.66 732.13) rotate(113.65)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="683.66" cy="732.13" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="676.84" cy="724.89" rx="5.96" ry="4.05" transform="rotate(-32 676.84 724.89)" fill="url(#beadSpecular)" />
+      <circle cx="675.14" cy="723.61" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(479.61 795.3) rotate(183.95)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(471.89 794.66) rotate(185.45)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(205.34 528.11) rotate(264.55)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(204.7 520.39) rotate(266.05)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(293.82 712.39) rotate(224.15)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(287.61 706.18) rotate(225.85)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="445.55" cy="790.95" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(445.55 790.95) rotate(162.6)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="445.55" cy="790.95" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="438.73" cy="783.71" rx="5.96" ry="4.05" transform="rotate(-32 438.73 783.71)" fill="url(#beadSpecular)" />
+      <circle cx="437.03" cy="782.43" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="399.49" cy="778.41" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(399.49 778.41) rotate(171.85)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="399.49" cy="778.41" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="392.67" cy="771.17" rx="5.96" ry="4.05" transform="rotate(-32 392.67 771.17)" fill="url(#beadSpecular)" />
+      <circle cx="390.97" cy="769.89" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="356.04" cy="758.64" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(356.04 758.64) rotate(181.1)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="356.04" cy="758.64" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="349.22" cy="751.4" rx="5.96" ry="4.05" transform="rotate(-32 349.22 751.4)" fill="url(#beadSpecular)" />
+      <circle cx="347.52" cy="750.12" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="316.34" cy="732.13" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(316.34 732.13) rotate(190.35)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="316.34" cy="732.13" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="309.52" cy="724.89" rx="5.96" ry="4.05" transform="rotate(-32 309.52 724.89)" fill="url(#beadSpecular)" />
+      <circle cx="307.82" cy="723.61" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="209.05" cy="554.45" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(209.05 554.45) rotate(231.39999999999998)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="209.05" cy="554.45" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="202.23" cy="547.21" rx="5.96" ry="4.05" transform="rotate(-32 202.23 547.21)" fill="url(#beadSpecular)" />
+      <circle cx="200.53" cy="545.93" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="221.59" cy="600.51" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(221.59 600.51) rotate(222.15)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="221.59" cy="600.51" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="214.77" cy="593.27" rx="5.96" ry="4.05" transform="rotate(-32 214.77 593.27)" fill="url(#beadSpecular)" />
+      <circle cx="213.07" cy="591.99" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="241.36" cy="643.96" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(241.36 643.96) rotate(212.9)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="241.36" cy="643.96" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="234.54" cy="636.72" rx="5.96" ry="4.05" transform="rotate(-32 234.54 636.72)" fill="url(#beadSpecular)" />
+      <circle cx="232.84" cy="635.44" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="267.87" cy="683.66" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(267.87 683.66) rotate(203.65)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="267.87" cy="683.66" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="261.05" cy="676.42" rx="5.96" ry="4.05" transform="rotate(-32 261.05 676.42)" fill="url(#beadSpecular)" />
+      <circle cx="259.35" cy="675.14" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(204.7 479.61) rotate(273.95)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(205.34 471.89) rotate(275.45)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(471.89 205.34) rotate(354.55)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(479.61 204.7) rotate(356.05)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(287.61 293.82) rotate(314.15)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(293.82 287.61) rotate(315.85)">
+        <rect x="-2.10" y="-13.50" width="4.20" height="27.00" rx="2.10" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="209.05" cy="445.55" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(209.05 445.55) rotate(252.60000000000002)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="209.05" cy="445.55" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="202.23" cy="438.31" rx="5.96" ry="4.05" transform="rotate(-32 202.23 438.31)" fill="url(#beadSpecular)" />
+      <circle cx="200.53" cy="437.03" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="221.59" cy="399.49" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(221.59 399.49) rotate(261.85)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="221.59" cy="399.49" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="214.77" cy="392.25" rx="5.96" ry="4.05" transform="rotate(-32 214.77 392.25)" fill="url(#beadSpecular)" />
+      <circle cx="213.07" cy="390.97" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="241.36" cy="356.04" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(241.36 356.04) rotate(271.1)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="241.36" cy="356.04" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="234.54" cy="348.8" rx="5.96" ry="4.05" transform="rotate(-32 234.54 348.8)" fill="url(#beadSpecular)" />
+      <circle cx="232.84" cy="347.52" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="267.87" cy="316.34" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(267.87 316.34) rotate(280.35)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="267.87" cy="316.34" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="261.05" cy="309.1" rx="5.96" ry="4.05" transform="rotate(-32 261.05 309.1)" fill="url(#beadSpecular)" />
+      <circle cx="259.35" cy="307.82" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="445.55" cy="209.05" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(445.55 209.05) rotate(321.4)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="445.55" cy="209.05" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="438.73" cy="201.81" rx="5.96" ry="4.05" transform="rotate(-32 438.73 201.81)" fill="url(#beadSpecular)" />
+      <circle cx="437.03" cy="200.53" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="399.49" cy="221.59" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(399.49 221.59) rotate(312.15)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="399.49" cy="221.59" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="392.67" cy="214.35" rx="5.96" ry="4.05" transform="rotate(-32 392.67 214.35)" fill="url(#beadSpecular)" />
+      <circle cx="390.97" cy="213.07" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="356.04" cy="241.36" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(356.04 241.36) rotate(302.9)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="356.04" cy="241.36" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="349.22" cy="234.12" rx="5.96" ry="4.05" transform="rotate(-32 349.22 234.12)" fill="url(#beadSpecular)" />
+      <circle cx="347.52" cy="232.84" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="316.34" cy="267.87" r="21.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(316.34 267.87) rotate(293.65)">
+        <ellipse cx="0" cy="0" rx="18.32" ry="9.37" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="316.34" cy="267.87" r="21.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="309.52" cy="260.63" rx="5.96" ry="4.05" transform="rotate(-32 309.52 260.63)" fill="url(#beadSpecular)" />
+      <circle cx="307.82" cy="259.35" r="1.49" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g transform="translate(500 204) rotate(0)" filter="url(#beadDropShadow)">
+      <rect x="-12.20" y="-20.50" width="24.40" height="41.00" rx="12.20" ry="12.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.42" cy="-6.56" rx="4.15" ry="8.61" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(796 500) rotate(90)" filter="url(#beadDropShadow)">
+      <rect x="-12.20" y="-20.50" width="24.40" height="41.00" rx="12.20" ry="12.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.42" cy="-6.56" rx="4.15" ry="8.61" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(500 796) rotate(180)" filter="url(#beadDropShadow)">
+      <rect x="-12.20" y="-20.50" width="24.40" height="41.00" rx="12.20" ry="12.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.42" cy="-6.56" rx="4.15" ry="8.61" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(204 500) rotate(270)" filter="url(#beadDropShadow)">
+      <rect x="-12.20" y="-20.50" width="24.40" height="41.00" rx="12.20" ry="12.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.42" cy="-6.56" rx="4.15" ry="8.61" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+
+  <!-- Inner Misbaha Prayer Bead Ring (24 Emerald Beads + 4 Cream Beads + Metallic Spacers) -->
+  <circle cx="500" cy="500" r="216" fill="none" stroke="#181c1a" stroke-width="2.5" opacity="0.65" />
+  
+      <g transform="translate(519.01 284.84) rotate(5.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(526.14 285.59) rotate(6.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(714.41 473.86) rotate(83.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(715.16 480.99) rotate(84.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(649.91 344.49) rotate(43.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(655.51 350.09) rotate(46.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="550.79" cy="290.06" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(550.79 290.06) rotate(-14.4)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="550.79" cy="290.06" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="544.61" cy="283.5" rx="5.40" ry="3.67" transform="rotate(-32 544.61 283.5)" fill="url(#beadSpecular)" />
+      <circle cx="543.07" cy="282.34" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="590.6" cy="303.92" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(590.6 303.92) rotate(-3.1999999999999993)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="590.6" cy="303.92" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="584.42" cy="297.36" rx="5.40" ry="3.67" transform="rotate(-32 584.42 297.36)" fill="url(#beadSpecular)" />
+      <circle cx="582.88" cy="296.20" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="626.96" cy="325.25" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(626.96 325.25) rotate(8)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="626.96" cy="325.25" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="620.78" cy="318.69" rx="5.40" ry="3.67" transform="rotate(-32 620.78 318.69)" fill="url(#beadSpecular)" />
+      <circle cx="619.24" cy="317.53" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="709.94" cy="449.21" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(709.94 449.21) rotate(48.400000000000006)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="709.94" cy="449.21" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="703.76" cy="442.65" rx="5.40" ry="3.67" transform="rotate(-32 703.76 442.65)" fill="url(#beadSpecular)" />
+      <circle cx="702.22" cy="441.49" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="696.08" cy="409.4" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(696.08 409.4) rotate(37.2)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="696.08" cy="409.4" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="689.9" cy="402.84" rx="5.40" ry="3.67" transform="rotate(-32 689.9 402.84)" fill="url(#beadSpecular)" />
+      <circle cx="688.36" cy="401.68" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="674.75" cy="373.04" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(674.75 373.04) rotate(26)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="674.75" cy="373.04" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="668.57" cy="366.48" rx="5.40" ry="3.67" transform="rotate(-32 668.57 366.48)" fill="url(#beadSpecular)" />
+      <circle cx="667.03" cy="365.32" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(715.16 519.01) rotate(95.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(714.41 526.14) rotate(96.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(526.14 714.41) rotate(173.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(519.01 715.16) rotate(174.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(655.51 649.91) rotate(133.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(649.91 655.51) rotate(136.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="709.94" cy="550.79" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(709.94 550.79) rotate(75.6)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="709.94" cy="550.79" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="703.76" cy="544.23" rx="5.40" ry="3.67" transform="rotate(-32 703.76 544.23)" fill="url(#beadSpecular)" />
+      <circle cx="702.22" cy="543.07" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="696.08" cy="590.6" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(696.08 590.6) rotate(86.8)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="696.08" cy="590.6" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="689.9" cy="584.04" rx="5.40" ry="3.67" transform="rotate(-32 689.9 584.04)" fill="url(#beadSpecular)" />
+      <circle cx="688.36" cy="582.88" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="674.75" cy="626.96" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(674.75 626.96) rotate(98)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="674.75" cy="626.96" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="668.57" cy="620.4" rx="5.40" ry="3.67" transform="rotate(-32 668.57 620.4)" fill="url(#beadSpecular)" />
+      <circle cx="667.03" cy="619.24" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="550.79" cy="709.94" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(550.79 709.94) rotate(138.4)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="550.79" cy="709.94" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="544.61" cy="703.38" rx="5.40" ry="3.67" transform="rotate(-32 544.61 703.38)" fill="url(#beadSpecular)" />
+      <circle cx="543.07" cy="702.22" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="590.6" cy="696.08" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(590.6 696.08) rotate(127.19999999999999)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="590.6" cy="696.08" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="584.42" cy="689.52" rx="5.40" ry="3.67" transform="rotate(-32 584.42 689.52)" fill="url(#beadSpecular)" />
+      <circle cx="582.88" cy="688.36" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="626.96" cy="674.75" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(626.96 674.75) rotate(116)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="626.96" cy="674.75" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="620.78" cy="668.19" rx="5.40" ry="3.67" transform="rotate(-32 620.78 668.19)" fill="url(#beadSpecular)" />
+      <circle cx="619.24" cy="667.03" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(480.99 715.16) rotate(185.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(473.86 714.41) rotate(186.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(285.59 526.14) rotate(263.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(284.84 519.01) rotate(264.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(350.09 655.51) rotate(223.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(344.49 649.91) rotate(226.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="449.21" cy="709.94" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(449.21 709.94) rotate(165.6)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="449.21" cy="709.94" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="443.03" cy="703.38" rx="5.40" ry="3.67" transform="rotate(-32 443.03 703.38)" fill="url(#beadSpecular)" />
+      <circle cx="441.49" cy="702.22" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="409.4" cy="696.08" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(409.4 696.08) rotate(176.8)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="409.4" cy="696.08" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="403.22" cy="689.52" rx="5.40" ry="3.67" transform="rotate(-32 403.22 689.52)" fill="url(#beadSpecular)" />
+      <circle cx="401.68" cy="688.36" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="373.04" cy="674.75" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(373.04 674.75) rotate(188)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="373.04" cy="674.75" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="366.86" cy="668.19" rx="5.40" ry="3.67" transform="rotate(-32 366.86 668.19)" fill="url(#beadSpecular)" />
+      <circle cx="365.32" cy="667.03" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="290.06" cy="550.79" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(290.06 550.79) rotate(228.39999999999998)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="290.06" cy="550.79" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="283.88" cy="544.23" rx="5.40" ry="3.67" transform="rotate(-32 283.88 544.23)" fill="url(#beadSpecular)" />
+      <circle cx="282.34" cy="543.07" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="303.92" cy="590.6" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(303.92 590.6) rotate(217.2)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="303.92" cy="590.6" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="297.74" cy="584.04" rx="5.40" ry="3.67" transform="rotate(-32 297.74 584.04)" fill="url(#beadSpecular)" />
+      <circle cx="296.20" cy="582.88" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="325.25" cy="626.96" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(325.25 626.96) rotate(206)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="325.25" cy="626.96" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="319.07" cy="620.4" rx="5.40" ry="3.67" transform="rotate(-32 319.07 620.4)" fill="url(#beadSpecular)" />
+      <circle cx="317.53" cy="619.24" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+      <g transform="translate(284.84 480.99) rotate(275.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(285.59 473.86) rotate(276.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(473.86 285.59) rotate(353.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(480.99 284.84) rotate(354.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(344.49 350.09) rotate(313.95)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+      <g transform="translate(350.09 344.49) rotate(316.05)">
+        <rect x="-1.90" y="-12.20" width="3.80" height="24.40" rx="1.90" fill="url(#spacerMetal)" stroke="#141816" stroke-width="0.7" />
+      </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="290.06" cy="449.21" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(290.06 449.21) rotate(255.60000000000002)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="290.06" cy="449.21" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="283.88" cy="442.65" rx="5.40" ry="3.67" transform="rotate(-32 283.88 442.65)" fill="url(#beadSpecular)" />
+      <circle cx="282.34" cy="441.49" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="303.92" cy="409.4" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(303.92 409.4) rotate(266.8)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="303.92" cy="409.4" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="297.74" cy="402.84" rx="5.40" ry="3.67" transform="rotate(-32 297.74 402.84)" fill="url(#beadSpecular)" />
+      <circle cx="296.20" cy="401.68" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="325.25" cy="373.04" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(325.25 373.04) rotate(278)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="325.25" cy="373.04" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="319.07" cy="366.48" rx="5.40" ry="3.67" transform="rotate(-32 319.07 366.48)" fill="url(#beadSpecular)" />
+      <circle cx="317.53" cy="365.32" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="449.21" cy="290.06" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(449.21 290.06) rotate(318.4)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="449.21" cy="290.06" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="443.03" cy="283.5" rx="5.40" ry="3.67" transform="rotate(-32 443.03 283.5)" fill="url(#beadSpecular)" />
+      <circle cx="441.49" cy="282.34" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="409.4" cy="303.92" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(409.4 303.92) rotate(307.2)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="409.4" cy="303.92" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="403.22" cy="297.36" rx="5.40" ry="3.67" transform="rotate(-32 403.22 297.36)" fill="url(#beadSpecular)" />
+      <circle cx="401.68" cy="296.20" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g filter="url(#beadDropShadow)">
+      <circle cx="373.04" cy="325.25" r="19.3" fill="url(#emeraldBeadBase)" stroke="#031109" stroke-width="0.8" />
+      <g transform="translate(373.04 325.25) rotate(296)">
+        <ellipse cx="0" cy="0" rx="16.60" ry="8.49" fill="url(#emeraldCatsEye)" opacity="0.82" />
+      </g>
+      <circle cx="373.04" cy="325.25" r="19.3" fill="url(#emeraldSphereShade)" />
+      <ellipse cx="366.86" cy="318.69" rx="5.40" ry="3.67" transform="rotate(-32 366.86 318.69)" fill="url(#beadSpecular)" />
+      <circle cx="365.32" cy="317.53" r="1.35" fill="#ffffff" opacity="0.92" />
+    </g>
+    <g transform="translate(500 284) rotate(0)" filter="url(#beadDropShadow)">
+      <rect x="-11.20" y="-18.60" width="22.40" height="37.20" rx="11.20" ry="11.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.14" cy="-5.95" rx="3.81" ry="7.81" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(716 500) rotate(90)" filter="url(#beadDropShadow)">
+      <rect x="-11.20" y="-18.60" width="22.40" height="37.20" rx="11.20" ry="11.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.14" cy="-5.95" rx="3.81" ry="7.81" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(500 716) rotate(180)" filter="url(#beadDropShadow)">
+      <rect x="-11.20" y="-18.60" width="22.40" height="37.20" rx="11.20" ry="11.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.14" cy="-5.95" rx="3.81" ry="7.81" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+    <g transform="translate(284 500) rotate(270)" filter="url(#beadDropShadow)">
+      <rect x="-11.20" y="-18.60" width="22.40" height="37.20" rx="11.20" ry="11.20" fill="url(#creamBeadGrad)" stroke="#5b4930" stroke-width="0.8" />
+      <ellipse cx="-3.14" cy="-5.95" rx="3.81" ry="7.81" fill="url(#creamHighlight)" opacity="0.85" />
+    </g>
+
+  <!-- Central Illuminated Smoked-Glass Dome & Golden Rim -->
+  <circle cx="500" cy="500" r="174" fill="url(#centerDome)" stroke="#f3dcb1" stroke-width="2.6" stroke-opacity="0.85" />
+  <circle cx="500" cy="500" r="168" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.2" />
+  <circle cx="500" cy="488" r="155" fill="url(#crescentAmbientGlow)" />
+
+  <!-- Center Sculpted 3D Cream-Gold Crescent Moon (Hilal) -->
+  <g filter="url(#crescentGlow)">
+    <path
+      d="M 505 424
+         A 63 63 0 1 0 562 504
+         A 50 52 0 1 1 505 424 Z"
+      fill="url(#crescentBodyGrad)"
+    />
+    <!-- Subtle Inner Sculpted Ridge on Crescent -->
+    <path
+      d="M 498 432
+         A 55 55 0 1 0 552 507
+         A 48 49 0 1 1 498 432 Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-opacity="0.55"
+      stroke-width="1.8"
+    />
+  </g>
+
+  <!-- Geometric Golden Arabic Wordmark: "أذكار" -->
+  <g fill="none" stroke="url(#azkarGoldGrad)" stroke-linecap="round" stroke-linejoin="round" filter="url(#textGlow)">
+    <!-- 1. Ra (ر) on the left -->
+    <path d="M 439 606 L 439 623 C 439 635, 430 644, 415 647" stroke-width="6.4" />
+
+    <!-- 2. Connected Alif + Geometric Kaf (كا) in the center -->
+    <path d="M 456 584 L 456 629 C 456 634, 460 636, 466 636 L 519 636 C 525 636, 527 632, 527 627 L 527 615 C 527 609, 523 606, 516 606 L 474 606" stroke-width="6.4" />
+    <!-- Upper angled bar of Kaf (ك) -->
+    <path d="M 484 592 L 524 599" stroke-width="6.2" />
+
+    <!-- 3. Dhal (ذ) -->
+    <path d="M 553 605 L 563 624 C 566 631, 563 636, 555 636 L 540 636" stroke-width="6.4" />
+    <circle cx="553" cy="589" r="3.8" fill="url(#azkarGoldGrad)" stroke="none" />
+
+    <!-- 4. Alif with Hamza (أ) on the right -->
+    <line x1="579" y1="586" x2="579" y2="636" stroke-width="6.4" />
+    <!-- Hamza (ء) above Alif -->
+    <path d="M 583 569 C 576 568, 573 572, 577 575 C 580 577, 575 579, 572 579" stroke-width="3.6" />
+  </g>
+</svg>

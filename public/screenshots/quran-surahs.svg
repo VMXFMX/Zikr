@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050c09"/>
+  <!-- Header -->
+  <circle cx="490" cy="48" r="24" fill="#0d2119"/>
+  <path d="M482 48 L498 48 M491 41 L498 48 L491 55" stroke="#28cc88" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="452" y="45" text-anchor="start" fill="#f5f8f6" font-family="IBM Plex Sans Arabic, sans-serif" font-size="27" font-weight="700">القرآن الكريم</text>
+  <text x="452" y="72" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">١١٤ سورة</text>
+  <circle cx="58" cy="48" r="25" fill="#0d2119"/><circle cx="58" cy="48" r="9" fill="none" stroke="#28cc88" stroke-width="3"/>
+  <circle cx="122" cy="48" r="25" fill="#0d2119"/><circle cx="122" cy="48" r="10" fill="#28cc88"/>
+  <circle cx="186" cy="48" r="25" fill="#0d2119"/><circle cx="186" cy="44" r="7" fill="none" stroke="#28cc88" stroke-width="2.2"/><line x1="192" y1="50" x2="198" y2="56" stroke="#28cc88" stroke-width="2.2"/>
+
+  <!-- Continue Reading Banner -->
+  <g transform="translate(28 104)">
+    <rect x="0" y="0" width="484" height="102" rx="28" fill="#0c2219" stroke="#1e5740" stroke-width="1.5"/>
+    <rect x="402" y="21" width="60" height="60" rx="18" fill="#123628" stroke="#23664b" stroke-width="1.2"/>
+    <path d="M420 44 L432 46 L444 44 L444 58 L432 60 L420 58 Z" fill="#28cc88"/>
+    <text x="384" y="40" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14" font-weight="600">متابعة القراءة    <tspan fill="#93aba0">صفحة ١   الآية ١١٤</tspan></text>
+    <text x="384" y="74" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">سورة المائدة</text>
+    <rect x="22" y="27" width="110" height="48" rx="24" fill="url(#emeraldBtn)"/>
+    <text x="77" y="57" text-anchor="middle" fill="#04150e" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16.5" font-weight="700">متابعة  ‹</text>
+  </g>
+
+  <!-- Tabs -->
+  <text x="434" y="264" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">السور</text>
+  <rect x="352" y="284" width="164" height="3.5" rx="1.75" fill="#28cc88"/>
+  <text x="270" y="264" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="600">الأجزاء</text>
+  <text x="108" y="264" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="600">المحفوظات</text>
+
+  <!-- Surah Cards -->
+  
+    <g transform="translate(26 312)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">١</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">الفاتحة</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة الفاتحة  •</tspan>  ٧ آيات</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ ٱلْفَاتِحَةِ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مكية</text>
+    </g>
+  
+    <g transform="translate(26 428)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">٢</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">البقرة</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة البقرة  •</tspan>  ٢٨٦ آية</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ البَقَرَةِ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مدنية</text>
+    </g>
+  
+    <g transform="translate(26 544)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">٣</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">آل عمران</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة آل عمران  •</tspan>  ٢٠٠ آية</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ آلِ عِمْرَانَ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مدنية</text>
+    </g>
+  
+    <g transform="translate(26 660)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">٤</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">النساء</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة النساء  •</tspan>  ١٧٦ آية</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ النِّسَاءِ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مدنية</text>
+    </g>
+  
+    <g transform="translate(26 776)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">٥</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">المائدة</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة المائدة  •</tspan>  ١٢٠ آية</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ المَائِدَةِ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مدنية</text>
+    </g>
+  
+    <g transform="translate(26 892)">
+      <rect x="0" y="0" width="488" height="102" rx="24" fill="#0b1813" stroke="#163026" stroke-width="1.2"/>
+      <rect x="414" y="24" width="54" height="54" rx="16" fill="#0f241c" stroke="#1b4233" stroke-width="1"/>
+      <text x="441" y="58" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">٦</text>
+      <text x="394" y="46" text-anchor="start" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="22" font-weight="700">الأنعام</text>
+      <text x="394" y="76" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5"><tspan fill="#8ea69b">سورة الأنعام  •</tspan>  ١٦٥ آية</text>
+      <text x="26" y="45" text-anchor="end" fill="#f3f7f5" font-family="Amiri, serif" font-size="22" font-weight="700">سُورَةُ الأَنْعَامِ</text>
+      <rect x="26" y="58" width="52" height="24" rx="8" fill="#10241c"/>
+      <text x="52" y="75" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5">مكية</text>
+    </g>
+  
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        <circle cx="0" cy="0" r="47" fill="url(#navActGrad)" stroke="#2ebc85" stroke-width="1.5" stroke-opacity="0.65"/>
+        <g transform="translate(0 -12)" color="#ffffff">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">كتب</text>
+      </g>
+    </g>
+</svg>

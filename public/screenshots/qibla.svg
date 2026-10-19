@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050b09"/>
+  <!-- Top Bar -->
+  <path d="M478 44 L496 44 M489 36 L496 44 L489 52" stroke="#dce7e2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <text x="270" y="38" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="25" font-weight="700">اتجاه القبلة</text>
+  <text x="270" y="66" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14">تحديد اتجاه الكعبة المشرفة بدقة بواسطة مستشعرات الجهاز</text>
+  <circle cx="52" cy="44" r="24" fill="#101d18"/>
+  <rect x="42" y="35" width="20" height="18" rx="2" fill="#222"/><rect x="42" y="39" width="20" height="3" fill="#e6c875"/>
+
+  <!-- Location Pill -->
+  <rect x="92" y="92" width="356" height="44" rx="22" fill="#0b1612" stroke="#162b23" stroke-width="1"/>
+  <text x="270" y="120" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="600">🎯 Worabe  <tspan fill="#8ea69b">•  مكة المكرمة / الكعبة 🕋 (١٥٢٢ كم)</tspan></text>
+
+  <!-- Alignment Pill -->
+  <rect x="142" y="172" width="256" height="54" rx="27" fill="#0d2e22" stroke="#1f664b" stroke-width="1.4"/>
+  <text x="270" y="206" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700">أنت متجه نحو القبلة 🕋</text>
+
+  <!-- Compass Circle -->
+  <circle cx="270" cy="488" r="184" fill="#0a1310" stroke="#142620" stroke-width="2"/>
+  <line x1="436" y1="488" x2="454" y2="488" stroke="#28cc88" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="86" y1="488" x2="104" y2="488" stroke="#28cc88" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="270" y1="654" x2="270" y2="672" stroke="#28cc88" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Top Kaaba Target Marker -->
+  <circle cx="270" cy="316" r="22" fill="#179866" stroke="#ffffff" stroke-width="2.5"/>
+  <rect x="260" y="307" width="20" height="18" rx="2" fill="#1b1b1b"/><rect x="260" y="311" width="20" height="3" fill="#e6c875"/>
+
+  <!-- Emerald Needle -->
+  <path d="M270 344 L282 486 L270 502 L258 486 Z" fill="#1ad188"/>
+  <circle cx="270" cy="482" r="5" fill="#0a1310" stroke="#ffffff" stroke-width="2.2"/>
+
+  <!-- Bottom Telemetry Card -->
+  <g transform="translate(26 734)">
+    <rect x="0" y="0" width="488" height="264" rx="28" fill="#0b1512" stroke="#162922" stroke-width="1.2"/>
+    <text x="462" y="42" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">اتجاه القبلة</text>
+    <text x="462" y="72" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أنت متجه نحو القبلة 🕋</text>
+    <text x="26" y="42" text-anchor="end" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">زاوية القبلة</text>
+    <text x="26" y="72" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="19" font-weight="700">°٧</text>
+
+    <text x="462" y="126" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">موقع جهازك الحالي</text>
+    <text x="462" y="156" text-anchor="start" fill="#ffffff" font-family="Plus Jakarta Sans, sans-serif" font-size="18.5" font-weight="700">Worabe</text>
+    <text x="26" y="126" text-anchor="end" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">الوجهة الدائمة</text>
+    <text x="26" y="156" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="17.5" font-weight="700">مكة المكرمة / الكعبة 🕋</text>
+
+    <text x="462" y="208" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">دقة البوصلة</text>
+    <text x="462" y="238" text-anchor="start" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">عالية</text>
+    <text x="26" y="208" text-anchor="end" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="13.5">المسافة إلى الكعبة المشرفة</text>
+    <text x="26" y="238" text-anchor="end" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">١٥٢٢ كم</text>
+  </g>
+
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">كتب</text>
+      </g>
+    </g>
+</svg>

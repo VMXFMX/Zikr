@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050c09"/>
+  <!-- Top Bar -->
+  <circle cx="490" cy="48" r="24" fill="#0d2119"/>
+  <path d="M482 48 L498 48 M491 41 L498 48 L491 55" stroke="#28cc88" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="452" y="56" text-anchor="start" fill="#f5f8f6" font-family="IBM Plex Sans Arabic, sans-serif" font-size="27" font-weight="700">أبواب الأذكار</text>
+  <circle cx="56" cy="48" r="25" fill="#0d2119"/><circle cx="56" cy="48" r="9" fill="none" stroke="#28cc88" stroke-width="3"/>
+  <circle cx="122" cy="48" r="25" fill="#0d2119"/><circle cx="122" cy="48" r="10" fill="none" stroke="#28cc88" stroke-width="2.2"/>
+  <circle cx="188" cy="48" r="25" fill="#0d2119"/><path d="M188 55 C188 55 178 48 178 42 C178 38 183 36 188 41 C193 36 198 38 198 42 C198 48 188 55 188 55 Z" fill="none" stroke="#28cc88" stroke-width="2.2"/>
+
+  <!-- Top Journey Card -->
+  <g transform="translate(26 96)">
+    <rect x="0" y="0" width="488" height="122" rx="28" fill="#0c2119" stroke="#1e5740" stroke-width="1.5"/>
+    <rect x="404" y="26" width="64" height="64" rx="20" fill="#113527" stroke="#23664b" stroke-width="1.2"/>
+    <circle cx="436" cy="58" r="16" fill="none" stroke="#28cc88" stroke-width="2.5"/>
+    <text x="386" y="44" text-anchor="start" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="21" font-weight="700">اليوم والليلة</text>
+    <rect x="174" y="24" width="90" height="26" rx="13" fill="#123829" stroke="#256d50" stroke-width="1"/>
+    <text x="219" y="42" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="12.5" font-weight="600">الرفيق اليومي</text>
+    <text x="386" y="74" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">رحلتك الإيمانية المتكاملة من</text>
+    <text x="386" y="96" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5">الاستيقاظ حتى المنام</text>
+    <rect x="20" y="39" width="134" height="44" rx="22" fill="url(#emeraldBtn)"/>
+    <text x="87" y="67" text-anchor="middle" fill="#04150e" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">ابدأ الرحلة ←</text>
+  </g>
+
+  <!-- Featured Verse -->
+  <text x="270" y="284" text-anchor="middle" fill="#f3f7f5" font-family="Amiri Quran, Amiri, serif" font-size="24" font-weight="700">يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ ٱللَّهَ ذِكْرًا كَثِيرًا</text>
+  <text x="270" y="340" text-anchor="middle" fill="#f3f7f5" font-family="Amiri Quran, Amiri, serif" font-size="24" font-weight="700">۝٤١ وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا ۝٤٢</text>
+  <text x="270" y="378" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="600">سورة الأحزاب • الآيات ٤١-٤٢</text>
+
+  <!-- 2-Column Category Grid -->
+  
+    <g transform="translate(278 406)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><circle cx="0" cy="0" r="14" fill="#28cc88"/><g stroke="#28cc88" stroke-width="3.5" stroke-linecap="round"><line x1="0" y1="-22" x2="0" y2="-26"/><line x1="0" y1="22" x2="0" y2="26"/><line x1="-22" y1="0" x2="-26" y2="0"/><line x1="22" y1="0" x2="26" y2="0"/><line x1="-16" y1="-16" x2="-19" y2="-19"/><line x1="16" y1="-16" x2="19" y2="-19"/><line x1="-16" y1="16" x2="-19" y2="19"/><line x1="16" y1="16" x2="19" y2="19"/></g></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار الصباح والمساء</text>
+    </g>
+  
+    <g transform="translate(26 406)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M6 -18 A20 20 0 1 0 20 12 A16 16 0 1 1 6 -18 Z" fill="#28cc88"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار النوم</text>
+    </g>
+  
+    <g transform="translate(278 582)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><rect x="-15" y="-22" width="30" height="44" rx="4" fill="#28cc88"/><path d="M-9 -6 L0 -16 L9 -6 L9 12 L-9 12 Z" fill="#0b1c16"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار الصلاة</text>
+    </g>
+  
+    <g transform="translate(26 582)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M-22 18 L-22 -2 L-12 -2 L0 -16 L12 -2 L22 -2 L22 18 Z" fill="#28cc88"/><rect x="-5" y="6" width="10" height="12" rx="5" fill="#0b1c16"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار المسجد</text>
+    </g>
+  
+    <g transform="translate(278 758)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M0 -22 C12 -6 18 4 18 12 A18 18 0 1 1 -18 12 C-18 4 -12 -6 0 -22 Z" fill="#28cc88"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار الوضوء</text>
+    </g>
+  
+    <g transform="translate(26 758)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M-10 -20 L-10 -2 M-15 -20 L-15 -6 C-15 0 -5 0 -5 -6 L-5 -20 M-10 -2 L-10 20 M8 -20 C14 -20 16 -10 16 0 L11 0 L11 20 L7 20 L7 -20 Z" stroke="#28cc88" stroke-width="3.5" fill="none" stroke-linecap="round"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار الطعام والشراب</text>
+    </g>
+  
+    <g transform="translate(278 934)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M-22 2 L0 -18 L22 2 L16 2 L16 20 L-16 20 L-16 2 Z" fill="#28cc88"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار المنزل</text>
+    </g>
+  
+    <g transform="translate(26 934)">
+      <rect x="0" y="0" width="236" height="160" rx="26" fill="#0b1b15" stroke="#17382b" stroke-width="1.3"/>
+      <g transform="translate(118 58)"><path d="M0 -22 L5 -6 L22 2 L22 7 L5 3 L5 15 L11 20 L11 23 L0 20 L-11 23 L-11 20 L-5 15 L-5 3 L-22 7 L-22 2 L-5 -6 Z" fill="#28cc88"/></g>
+      <text x="118" y="128" text-anchor="middle" fill="#f3f7f5" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18.5" font-weight="700">أذكار السفر</text>
+    </g>
+  
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        <circle cx="0" cy="0" r="47" fill="url(#navActGrad)" stroke="#2ebc85" stroke-width="1.5" stroke-opacity="0.65"/>
+        <g transform="translate(0 -12)" color="#ffffff">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">كتب</text>
+      </g>
+    </g>
+</svg>

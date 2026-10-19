@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+    
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+
+    <radialGradient id="sebhaOrbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#196647" stop-opacity="0.5"/>
+      <stop offset="62%" stop-color="#0f3d2b" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#050c09" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="540" height="1170" fill="#050c09"/>
+  <!-- Top Bar -->
+  <circle cx="484" cy="48" r="26" fill="#0d2119"/>
+  <path d="M476 48 L492 48 M485 41 L492 48 L485 55" stroke="#28cc88" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="444" y="46" text-anchor="start" fill="#f5f8f6" font-family="IBM Plex Sans Arabic, sans-serif" font-size="27" font-weight="700">السبحة</text>
+  <text x="444" y="72" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">اذكر الله يذكرك</text>
+  <circle cx="58" cy="48" r="26" fill="#0d2119"/><circle cx="58" cy="48" r="9" fill="none" stroke="#28cc88" stroke-width="3.2"/>
+
+  <!-- Dhikr Pills -->
+  <rect x="394" y="110" width="122" height="64" rx="26" fill="#0f3124" stroke="#28cc88" stroke-width="1.6"/>
+  <text x="455" y="149" text-anchor="middle" fill="#ffffff" font-family="Amiri, serif" font-size="20" font-weight="700">سُبْحَانَ اللَّهِ</text>
+  <rect x="276" y="110" width="106" height="64" rx="26" fill="#0b1713" stroke="#162c24" stroke-width="1.2"/>
+  <text x="329" y="149" text-anchor="middle" fill="#d8e4de" font-family="Amiri, serif" font-size="19" font-weight="700">الْحَمْدُ لِلَّهِ</text>
+  <rect x="138" y="110" width="126" height="64" rx="26" fill="#0b1713" stroke="#162c24" stroke-width="1.2"/>
+  <text x="201" y="149" text-anchor="middle" fill="#d8e4de" font-family="Amiri, serif" font-size="19" font-weight="700">لَا إِلَهَ إِلَّا اللَّهُ</text>
+  <rect x="28" y="110" width="98" height="64" rx="26" fill="#0b1713" stroke="#162c24" stroke-width="1.2"/>
+  <text x="77" y="149" text-anchor="middle" fill="#d8e4de" font-family="Amiri, serif" font-size="19" font-weight="700">اللَّهُ أَكْبَرُ</text>
+
+  <!-- Target Count Pills -->
+  <rect x="332" y="196" width="56" height="40" rx="20" fill="#103627" stroke="#28cc88" stroke-width="1.5"/>
+  <text x="360" y="222" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">٣٣</text>
+  <rect x="266" y="196" width="54" height="40" rx="20" fill="#0b1713" stroke="#162c24" stroke-width="1.2"/>
+  <text x="293" y="222" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">١٠٠</text>
+  <rect x="154" y="196" width="98" height="40" rx="20" fill="#0b1713" stroke="#162c24" stroke-width="1.2"/>
+  <text x="203" y="222" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15">مفتوح ∞</text>
+
+  <!-- Central Glowing Tasbih Circle -->
+  <circle cx="270" cy="566" r="215" fill="url(#sebhaOrbGlow)"/>
+  <circle cx="270" cy="566" r="164" fill="#07120e" stroke="#173b2c" stroke-width="2"/>
+  <circle cx="270" cy="566" r="144" fill="#091611" stroke="#112b20" stroke-width="1"/>
+  <text x="270" y="492" text-anchor="middle" fill="#ffffff" font-family="Amiri, serif" font-size="31" font-weight="700">سُبْحَانَ اللَّهِ</text>
+  <polygon points="270,564 278,572 270,580 262,572" fill="#28cc88"/>
+  <text x="270" y="636" text-anchor="middle" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="17">من ٣٣</text>
+
+  <!-- Bottom Action Row -->
+  <text x="494" y="990" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="16">انقر على الدائرة للتسبيح</text>
+  <rect x="44" y="960" width="136" height="46" rx="23" fill="#0c1814" stroke="#193027" stroke-width="1.2"/>
+  <text x="112" y="989" text-anchor="middle" fill="#b7c8c0" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15" font-weight="600">↻  إعادة ضبط</text>
+
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        <circle cx="0" cy="0" r="47" fill="url(#navActGrad)" stroke="#2ebc85" stroke-width="1.5" stroke-opacity="0.65"/>
+        <g transform="translate(0 -12)" color="#ffffff">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">كتب</text>
+      </g>
+    </g>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1170" width="540" height="1170" dir="rtl">
+  <defs>
+  <linearGradient id="navActGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1f5944"/>
+    <stop offset="100%" stop-color="#0f2e22"/>
+  </linearGradient>
+  <linearGradient id="emeraldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#1fd18a"/>
+    <stop offset="100%" stop-color="#14a86d"/>
+  </linearGradient>
+</defs>
+  <rect width="540" height="1170" fill="#050c09"/>
+  <!-- Top Bar -->
+  <circle cx="484" cy="48" r="26" fill="#0d2119"/>
+  <path d="M476 48 L492 48 M485 41 L492 48 L485 55" stroke="#dce7e2" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <text x="270" y="56" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="26" font-weight="700">كتب</text>
+  <circle cx="56" cy="48" r="26" fill="#0d2119"/><circle cx="54" cy="46" r="8" fill="none" stroke="#28cc88" stroke-width="2.4"/><line x1="60" y1="52" x2="66" y2="58" stroke="#28cc88" stroke-width="2.4"/>
+
+  <!-- Continue Reading Card -->
+  <g transform="translate(26 96)">
+    <rect x="0" y="0" width="488" height="114" rx="28" fill="#0d1b16" stroke="#574e35" stroke-width="1.5"/>
+    <circle cx="436" cy="57" r="32" fill="#102b20" stroke="#235c44" stroke-width="1.2"/>
+    <polygon points="431,47 446,57 431,67" fill="#e6c875"/>
+    <text x="386" y="38" text-anchor="start" fill="#e6c875" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14" font-weight="600">تابع القراءة</text>
+    <text x="386" y="68" text-anchor="start" fill="#ffffff" font-family="Amiri, serif" font-size="22" font-weight="700">مِنْ طَرِيقِكَ إِلَى الجَنَّةِ</text>
+    <text x="386" y="94" text-anchor="start" fill="#8ea69b" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14">صفحة ٣٨ من ٤٨</text>
+    <circle cx="44" cy="57" r="24" fill="#17261e" stroke="#454331" stroke-width="1"/>
+    <rect x="34" y="49" width="20" height="16" rx="2" fill="#e6c875"/>
+  </g>
+
+  <!-- Main Book Card -->
+  <g transform="translate(26 232)">
+    <rect x="0" y="0" width="488" height="304" rx="28" fill="#0a1813" stroke="#18382c" stroke-width="1.3"/>
+    <rect x="348" y="24" width="116" height="244" rx="18" fill="#0d231a" stroke="#214d3b" stroke-width="1.2"/>
+    <circle cx="406" cy="116" r="28" fill="#113325" stroke="#28cc88" stroke-width="1.2" stroke-opacity="0.5"/>
+    <text x="406" y="122" text-anchor="middle" fill="#e6c875" font-family="Amiri, serif" font-size="16" font-weight="700">كتاب</text>
+    <rect x="280" y="20" width="46" height="24" rx="8" fill="#1e2418" stroke="#574e35" stroke-width="1"/>
+    <text x="303" y="37" text-anchor="middle" fill="#e6c875" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700">PDF</text>
+    <text x="326" y="74" text-anchor="start" fill="#ffffff" font-family="Amiri, serif" font-size="23" font-weight="700">مِنْ طَرِيقِكَ إِلَى الجَنَّةِ</text>
+    <text x="326" y="108" text-anchor="start" fill="#9cb3a8" font-family="Amiri, serif" font-size="15.5">رِحْلَةٌ إِيمَانِيَّةٌ فِي العِبَادَةِ وَالطَّاعَةِ وَالأَخْلَاقِ وَالأَعْمَالِ</text>
+    <text x="326" y="132" text-anchor="start" fill="#9cb3a8" font-family="Amiri, serif" font-size="15.5">الصَّالِحَةِ</text>
+    <text x="326" y="168" text-anchor="start" fill="#9cb3a8" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14">صفحة ٣٨ من ٤٨</text>
+    <text x="20" y="168" text-anchor="end" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14" font-weight="700">٧٩٪ مكتمل</text>
+    <rect x="20" y="182" width="306" height="7" rx="3.5" fill="#122b22"/>
+    <rect x="82" y="182" width="244" height="7" rx="3.5" fill="#28cc88"/>
+    <rect x="20" y="210" width="306" height="58" rx="18" fill="#0f3c2b"/>
+    <text x="173" y="246" text-anchor="middle" fill="#28cc88" font-family="IBM Plex Sans Arabic, sans-serif" font-size="17" font-weight="700">◀   متابعة القراءة</text>
+  </g>
+
+  
+    <g>
+      <rect x="14" y="1028" width="512" height="116" rx="58" fill="#091712" fill-opacity="0.96" stroke="#1e4938" stroke-width="1.5"/>
+      
+      <g transform="translate(468 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-12 -8 C-6 -11 0 -9 0 -5 C0 -9 6 -11 12 -8 L12 8 C6 6 0 8 0 11 C0 8 -6 6 -12 8 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">القرآن</text>
+      </g>
+      <g transform="translate(368 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <path d="M-11 10 L-11 -2 L-6 -7 L0 -12 L6 -7 L11 -2 L11 10 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="0" cy="2" r="3" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">الأذكار</text>
+      </g>
+      <g transform="translate(270 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M-5 -4 A6 6 0 1 0 5 5 A4.5 4.5 0 1 1 -5 -4 Z" fill="currentColor"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">اليوم والليلة</text>
+      </g>
+      <g transform="translate(172 1086)">
+        
+        <g transform="translate(0 -12)" color="#8fa89d">
+          <circle cx="0" cy="-2" r="8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-dasharray="3 3"/><path d="M0 6 L0 13 M-3 11 L3 11" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#8fa89d" font-family="IBM Plex Sans Arabic, sans-serif" font-size="14.5" font-weight="500">السبحة</text>
+      </g>
+      <g transform="translate(74 1086)">
+        <circle cx="0" cy="0" r="47" fill="url(#navActGrad)" stroke="#2ebc85" stroke-width="1.5" stroke-opacity="0.65"/>
+        <g transform="translate(0 -12)" color="#ffffff">
+          <path d="M-12 -9 L0 -6 L12 -9 L12 9 L0 12 L-12 9 Z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="0" y1="-6" x2="0" y2="12" stroke="currentColor" stroke-width="2"/>
+        </g>
+        <text x="0" y="21" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Sans Arabic, sans-serif" font-size="15.5" font-weight="700">كتب</text>
+      </g>
+    </g>
+</svg>

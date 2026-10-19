@@ -5,79 +5,141 @@
   html.dark {
     --bg-canvas: #020611;
     --bg-elevated: #050c1d;
-    --bg-surface: rgba(9, 19, 40, 0.56);
-    --bg-surface-strong: rgba(11, 23, 48, 0.78);
-    --bg-surface-hover: rgba(15, 31, 62, 0.74);
-    --bg-subcard: rgba(13, 27, 54, 0.48);
-    --bg-bar: rgba(7, 15, 34, 0.72);
-    --bg-pill-track: rgba(3, 8, 20, 0.52);
+    --bg-surface: rgba(8, 17, 36, 0.58);
+    --bg-surface-strong: rgba(10, 21, 44, 0.78);
+    --bg-surface-hover: rgba(14, 29, 58, 0.74);
+    --bg-subcard: rgba(12, 25, 50, 0.5);
+    --bg-bar: transparent;
+    --bg-pill-track: transparent;
     --bg-nav-active: linear-gradient(
       135deg,
       rgba(16, 185, 129, 0.22) 0%,
-      rgba(56, 189, 248, 0.14) 100%
+      rgba(56, 189, 248, 0.15) 100%
     );
     --border-glass: rgba(148, 163, 184, 0.14);
     --border-glass-highlight: rgba(56, 189, 248, 0.36);
     --border-active-pill: rgba(52, 211, 153, 0.42);
-    --border-subtle: rgba(148, 163, 184, 0.08);
+    --border-subtle: rgba(148, 163, 184, 0.09);
     --text-primary: #f8fafc;
-    --text-secondary: #d5dfec;
-    --text-muted: #a1b2c8;
+    --text-secondary: #d8e2ef;
+    --text-muted: #9fb0c7;
     --accent-primary: #10b981;
     --accent-secondary: #38bdf8;
-    --ambient-emerald: rgba(16, 185, 129, 0.16);
-    --ambient-ice: rgba(56, 189, 248, 0.14);
-    --ambient-white: rgba(226, 232, 240, 0.06);
-    --ambient-deep: rgba(15, 23, 42, 0.48);
-    --shadow-bar: 0 18px 44px -10px rgba(2, 6, 23, 0.78),
-      0 0 28px -8px rgba(16, 185, 129, 0.14),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.14);
+    --ambient-emerald: rgba(16, 185, 129, 0.27);
+    --ambient-emerald-soft: rgba(16, 185, 129, 0.16);
+    --ambient-ice: rgba(56, 189, 248, 0.25);
+    --ambient-ice-soft: rgba(56, 189, 248, 0.15);
+    --ambient-white: rgba(226, 232, 240, 0.12);
+    --ambient-deep: rgba(15, 23, 42, 0.62);
+    --ambient-shimmer: rgba(52, 211, 153, 0.22);
+    --ambient-shimmer-ice: rgba(56, 189, 248, 0.21);
+    --ambient-orb-opacity: 0.96;
+    --ambient-foundation: radial-gradient(
+      ellipse 125% 95% at 50% -5%,
+      #07142b 0%,
+      #030917 54%,
+      #01040b 100%
+    );
+    --ambient-flow-gradient: linear-gradient(
+      125deg,
+      rgba(16, 185, 129, 0.15) 0%,
+      rgba(56, 189, 248, 0.13) 44%,
+      rgba(2, 6, 17, 0) 78%
+    );
+    --particle-emerald-bg: rgba(110, 231, 183, 0.98);
+    --particle-emerald-shadow: 0 0 9px 2px rgba(16, 185, 129, 0.72),
+      0 0 18px 4px rgba(16, 185, 129, 0.34);
+    --particle-ice-bg: rgba(186, 230, 253, 0.98);
+    --particle-ice-shadow: 0 0 9px 2px rgba(56, 189, 248, 0.72),
+      0 0 18px 4px rgba(56, 189, 248, 0.34);
+    --particle-lumen-bg: rgba(248, 250, 252, 0.98);
+    --particle-lumen-shadow: 0 0 8px 2px rgba(226, 232, 240, 0.65),
+      0 0 16px 3.5px rgba(56, 189, 248, 0.3);
+    --star-opacity-scale: 1;
+    --wave-opacity: 0.86;
+    --flow-opacity: 0.9;
+    --reflection-opacity: 0.84;
+    --shadow-bar: 0 18px 42px -12px rgba(2, 6, 23, 0.78),
+      0 0 26px -10px rgba(16, 185, 129, 0.14),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.13);
     --shadow-active-pill: 0 4px 18px -2px rgba(16, 185, 129, 0.28),
       0 0 14px -4px rgba(56, 189, 248, 0.22),
       inset 0 1px 0 0 rgba(255, 255, 255, 0.18);
-    --shadow-glass: 0 24px 56px -16px rgba(2, 6, 23, 0.76),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
-    --shadow-glass-hover: 0 28px 64px -14px rgba(2, 6, 23, 0.84),
-      0 0 32px -10px rgba(56, 189, 248, 0.18),
-      inset 0 1px 0 0 rgba(186, 230, 253, 0.24);
+    --shadow-glass: 0 22px 52px -16px rgba(2, 6, 23, 0.74),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.11);
+    --shadow-glass-hover: 0 28px 60px -14px rgba(2, 6, 23, 0.82),
+      0 0 30px -10px rgba(56, 189, 248, 0.18),
+      inset 0 1px 0 0 rgba(186, 230, 253, 0.22);
     color-scheme: dark;
   }
 
   html.light {
-    --bg-canvas: #faf8f4;
-    --bg-elevated: #f3f0e8;
-    --bg-surface: rgba(255, 255, 255, 0.76);
-    --bg-surface-strong: rgba(255, 255, 255, 0.92);
-    --bg-surface-hover: rgba(255, 255, 255, 0.97);
+    --bg-canvas: #f6f8fa;
+    --bg-elevated: #edf2f7;
+    --bg-surface: rgba(255, 255, 255, 0.74);
+    --bg-surface-strong: rgba(255, 255, 255, 0.88);
+    --bg-surface-hover: rgba(255, 255, 255, 0.95);
     --bg-subcard: rgba(248, 250, 252, 0.82);
-    --bg-bar: rgba(255, 255, 255, 0.82);
-    --bg-pill-track: rgba(15, 23, 42, 0.045);
+    --bg-bar: transparent;
+    --bg-pill-track: transparent;
     --bg-nav-active: linear-gradient(
       135deg,
-      rgba(16, 185, 129, 0.16) 0%,
-      rgba(56, 189, 248, 0.11) 100%
+      rgba(16, 185, 129, 0.18) 0%,
+      rgba(14, 165, 233, 0.13) 100%
     );
     --border-glass: rgba(15, 23, 42, 0.09);
-    --border-glass-highlight: rgba(16, 185, 129, 0.34);
-    --border-active-pill: rgba(5, 150, 105, 0.36);
-    --border-subtle: rgba(15, 23, 42, 0.06);
-    --text-primary: #0f172a;
-    --text-secondary: #334155;
-    --text-muted: #526077;
+    --border-glass-highlight: rgba(16, 185, 129, 0.36);
+    --border-active-pill: rgba(5, 150, 105, 0.38);
+    --border-subtle: rgba(15, 23, 42, 0.065);
+    --text-primary: #091122;
+    --text-secondary: #2d3d52;
+    --text-muted: #52637a;
     --accent-primary: #047857;
     --accent-secondary: #0284c7;
-    --ambient-emerald: rgba(16, 185, 129, 0.11);
-    --ambient-ice: rgba(56, 189, 248, 0.1);
-    --ambient-white: rgba(255, 255, 255, 0.78);
-    --ambient-deep: rgba(226, 220, 208, 0.42);
+    --ambient-emerald: rgba(16, 185, 129, 0.31);
+    --ambient-emerald-soft: rgba(16, 185, 129, 0.19);
+    --ambient-ice: rgba(14, 165, 233, 0.29);
+    --ambient-ice-soft: rgba(14, 165, 233, 0.18);
+    --ambient-white: rgba(56, 189, 248, 0.19);
+    --ambient-deep: rgba(13, 148, 136, 0.18);
+    --ambient-shimmer: rgba(16, 185, 129, 0.25);
+    --ambient-shimmer-ice: rgba(14, 165, 233, 0.24);
+    --ambient-orb-opacity: 0.96;
+    --ambient-foundation: radial-gradient(
+      ellipse 125% 95% at 50% -5%,
+      #eaf6ff 0%,
+      #f3f7fa 52%,
+      #e9f1f7 100%
+    );
+    --ambient-flow-gradient: linear-gradient(
+      125deg,
+      rgba(16, 185, 129, 0.18) 0%,
+      rgba(14, 165, 233, 0.16) 44%,
+      rgba(255, 255, 255, 0) 78%
+    );
+    --particle-emerald-bg: rgba(5, 150, 105, 0.94);
+    --particle-emerald-shadow: 0 0 9px 2px rgba(16, 185, 129, 0.62),
+      0 0 18px 4px rgba(16, 185, 129, 0.3);
+    --particle-ice-bg: rgba(2, 132, 199, 0.92);
+    --particle-ice-shadow: 0 0 9px 2px rgba(14, 165, 233, 0.6),
+      0 0 18px 4px rgba(14, 165, 233, 0.28);
+    --particle-lumen-bg: rgba(13, 148, 136, 0.92);
+    --particle-lumen-shadow: 0 0 8px 2px rgba(20, 184, 166, 0.56),
+      0 0 16px 3px rgba(14, 165, 233, 0.26);
+    --star-opacity-scale: 1;
+    --wave-opacity: 0.88;
+    --flow-opacity: 0.92;
+    --reflection-opacity: 0.86;
     --shadow-bar: 0 14px 36px -10px rgba(15, 23, 42, 0.08),
-      0 0 24px -8px rgba(16, 185, 129, 0.1),
+      0 0 24px -8px rgba(16, 185, 129, 0.12),
       inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
-    --shadow-active-pill: 0 4px 14px -2px rgba(5, 150, 105, 0.16),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
-    --shadow-glass: 0 20px 48px -16px rgba(15, 23, 42, 0.07),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
-    --shadow-glass-hover: 0 24px 54px -14px rgba(15, 23, 42, 0.11),
+    --shadow-active-pill: 0 4px 14px -2px rgba(5, 150, 105, 0.18),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.92);
+    --shadow-glass: 0 20px 46px -16px rgba(15, 23, 42, 0.075),
+      0 0 24px -10px rgba(14, 165, 233, 0.08),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.92);
+    --shadow-glass-hover: 0 24px 52px -14px rgba(15, 23, 42, 0.11),
+      0 0 28px -8px rgba(16, 185, 129, 0.15),
       inset 0 1px 0 0 rgba(255, 255, 255, 1);
     color-scheme: light;
   }
@@ -117,7 +179,7 @@
     font-family: "IBM Plex Sans Arabic", "Plus Jakarta Sans", "Noto Sans Ethiopic", system-ui, -apple-system, sans-serif;
     line-height: 1.78;
     letter-spacing: 0em !important;
-    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "curs" 1, "mark" 1, "mkmk" 1;
+    font-feature-settings: "ccmp" 1, "rlig" 1, "kern" 1, "liga" 1, "calt" 1, "curs" 1, "mark" 1, "mkmk" 1;
     font-variant-ligatures: common-ligatures contextual;
   }
 
@@ -157,55 +219,63 @@
 
 /* Multilingual Typographic Hierarchy Utilities */
 .zikr-heading-hero {
-  font-size: clamp(1.85rem, 3.6vw, 3.15rem);
+  font-size: clamp(1.65rem, 4.5vw, 3.35rem);
   font-weight: 700;
   text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 html[lang="ar"] .zikr-heading-hero {
-  line-height: 1.36;
+  line-height: 1.4;
 }
 
 html[lang="en"] .zikr-heading-hero {
   line-height: 1.18;
-  letter-spacing: -0.022em;
+  letter-spacing: -0.024em;
 }
 
 html[lang="am"] .zikr-heading-hero {
-  line-height: 1.36;
+  line-height: 1.4;
 }
 
 .zikr-heading-section {
-  font-size: clamp(1.375rem, 2.5vw, 2.15rem);
+  font-size: clamp(1.3rem, 3vw, 2.25rem);
   font-weight: 700;
   text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 html[lang="ar"] .zikr-heading-section {
-  line-height: 1.38;
+  line-height: 1.42;
 }
 
 html[lang="en"] .zikr-heading-section {
   line-height: 1.24;
-  letter-spacing: -0.018em;
+  letter-spacing: -0.02em;
 }
 
 html[lang="am"] .zikr-heading-section {
-  line-height: 1.38;
-}
-
-.zikr-heading-card {
-  font-size: clamp(1.025rem, 1.35vw, 1.1875rem);
-  font-weight: 700;
   line-height: 1.42;
 }
 
+.zikr-heading-card {
+  font-size: clamp(1.02rem, 1.38vw, 1.21875rem);
+  font-weight: 700;
+  line-height: 1.44;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .zikr-body-lead {
-  font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  font-size: clamp(0.925rem, 1.22vw, 1.075rem);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 html[lang="ar"] .zikr-body-lead {
-  line-height: 1.82;
+  line-height: 1.84;
 }
 
 html[lang="en"] .zikr-body-lead {
@@ -213,23 +283,25 @@ html[lang="en"] .zikr-body-lead {
 }
 
 html[lang="am"] .zikr-body-lead {
-  line-height: 1.76;
+  line-height: 1.78;
 }
 
 .zikr-body-card {
-  font-size: clamp(0.8125rem, 0.95vw, 0.90625rem);
+  font-size: clamp(0.825rem, 0.96vw, 0.925rem);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 html[lang="ar"] .zikr-body-card {
-  line-height: 1.76;
+  line-height: 1.78;
 }
 
 html[lang="en"] .zikr-body-card {
-  line-height: 1.62;
+  line-height: 1.64;
 }
 
 html[lang="am"] .zikr-body-card {
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
 /* Viewport Shell & Single Scroll-Safe Main Container */
@@ -278,10 +350,23 @@ html[lang="am"] .zikr-body-card {
 }
 
 .font-sacred-arabic {
-  font-family: "Amiri", "IBM Plex Sans Arabic", serif;
-  line-height: 2.05;
+  font-family: "Amiri", "Amiri Quran", "IBM Plex Sans Arabic", serif;
+  line-height: 2.12;
   letter-spacing: 0em !important;
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "curs" 1, "mark" 1, "mkmk" 1;
+  word-spacing: normal;
+  overflow-wrap: break-word;
+  font-variant-numeric: normal;
+  font-feature-settings: "ccmp" 1, "rlig" 1, "kern" 1, "liga" 1, "calt" 1, "curs" 1, "mark" 1, "mkmk" 1;
+  font-variant-ligatures: common-ligatures contextual;
+}
+
+.zikr-ayah-marker {
+  display: inline;
+  white-space: nowrap;
+  letter-spacing: 0em !important;
+  word-spacing: 0em !important;
+  font-variant-numeric: normal;
+  font-feature-settings: "ccmp" 1, "rlig" 1, "kern" 1, "liga" 1, "calt" 1, "curs" 1, "mark" 1, "mkmk" 1;
 }
 
 .font-brand {
@@ -290,41 +375,62 @@ html[lang="am"] .zikr-body-card {
   line-height: 1.2;
 }
 
-/* Floating Rounded Glass Bars with Soft Ambient Glow */
+/* Floating Bars - 100% Fully Cut Background, Crystal-Clear Glassmorphism with Zero Tint */
 .zikr-floating-bar {
   position: relative;
-  background-color: var(--bg-bar);
-  backdrop-filter: blur(22px) saturate(160%);
-  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
   border: 1px solid var(--border-glass);
-  box-shadow: var(--shadow-bar);
-  transition: border-color 220ms cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.16) !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.zikr-floating-bar::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: linear-gradient(
-    90deg,
-    rgba(16, 185, 129, 0.14) 0%,
-    rgba(56, 189, 248, 0.12) 50%,
-    rgba(16, 185, 129, 0.14) 100%
-  );
-  filter: blur(14px);
-  opacity: 0.55;
-  z-index: -1;
-  pointer-events: none;
+header .zikr-floating-bar,
+footer .zikr-floating-bar {
+  border-radius: 9999px;
 }
 
-/* Recessed Pill Track & Illuminated Active Navigation Item */
+@media (max-width: 640px) {
+  .zikr-floating-bar,
+  header .zikr-floating-bar,
+  footer .zikr-floating-bar {
+    border-radius: 1.25rem;
+  }
+}
+
+/* Target Selected Root Element: div#root:nth-of-type(1) > div:nth-of-type(1) - Seamless Non-cutting Transparent Framing */
+div#root:nth-of-type(1) > div:nth-of-type(1),
+div#root > div,
+.zikr-viewport-shell {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Header & Footer Container Wrappers - Clean Transparent Framing */
+header,
+footer,
+div#root > div > header,
+div#root > div > footer {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Recessed Pill Track & Illuminated Active Navigation Item - Fully Cut Background */
 .zikr-pill-track {
-  background-color: var(--bg-pill-track);
+  background: transparent !important;
+  background-color: transparent !important;
   border: 1px solid var(--border-subtle);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: none !important;
 }
 
 .zikr-nav-item-active {
@@ -337,69 +443,140 @@ html[lang="am"] .zikr-body-card {
 /* Primary Illuminated Button & Rounded Glass Controls */
 .zikr-btn-primary {
   position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #10b981 0%, #059669 55%, #0d9488 100%);
-  border: 1px solid rgba(110, 231, 183, 0.42);
+  border: 1px solid rgba(110, 231, 183, 0.44);
   box-shadow: 0 12px 28px -6px rgba(16, 185, 129, 0.42),
     0 0 20px -4px rgba(56, 189, 248, 0.22),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.28);
   color: #ffffff;
-  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    filter 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zikr-btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  transition: left 650ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (hover: hover) {
   .zikr-btn-primary:hover {
-    transform: translateY(-1.5px);
-    box-shadow: 0 16px 34px -6px rgba(16, 185, 129, 0.52),
-      0 0 26px -4px rgba(56, 189, 248, 0.32),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.38);
-    filter: brightness(1.05);
+    transform: translateY(-2.5px) scale(1.02);
+    box-shadow: 0 18px 40px -6px rgba(16, 185, 129, 0.62),
+      0 0 30px -4px rgba(56, 189, 248, 0.42),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.45);
+    filter: brightness(1.07);
+  }
+
+  .zikr-btn-primary:hover::after {
+    left: 150%;
   }
 }
 
 .zikr-btn-primary:active {
-  transform: translateY(0) scale(0.985);
+  transform: translateY(0) scale(0.96);
+  filter: brightness(0.98);
 }
 
 .zikr-control-pill {
   background-color: var(--bg-surface);
-  backdrop-filter: blur(18px) saturate(150%);
-  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
   border: 1px solid var(--border-glass);
-  box-shadow: 0 8px 22px -6px rgba(2, 6, 23, 0.45),
+  box-shadow: 0 8px 22px -6px rgba(2, 6, 23, 0.35),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
-  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 220ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (hover: hover) {
   .zikr-control-pill:hover {
     background-color: var(--bg-surface-hover);
     border-color: var(--border-glass-highlight);
-    box-shadow: 0 10px 26px -6px rgba(2, 6, 23, 0.55),
-      0 0 18px -6px rgba(56, 189, 248, 0.24),
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
+    box-shadow: 0 14px 32px -6px rgba(2, 6, 23, 0.5),
+      0 0 24px -4px rgba(56, 189, 248, 0.32),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px) scale(1.015);
   }
 }
 
 .zikr-control-pill:active {
-  transform: translateY(0) scale(0.98);
+  transform: translateY(0) scale(0.96);
 }
 
-/* Sophisticated Glassmorphism Surfaces */
+/* Language Selector Dropdown - Absolute positioning prevents expanding or breaking header layout */
+.language-selector-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 8px);
+  inset-inline-end: 0;
+  width: 140px;
+  background-color: var(--bg-surface-strong);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--border-glass-highlight);
+  border-radius: 1rem;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.45), var(--shadow-bar);
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 0.375rem;
+}
+
+.lang-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.lang-option:hover,
+.lang-option:focus-visible {
+  background-color: var(--bg-pill-track);
+  color: var(--text-primary);
+}
+
+/* Sophisticated Glassmorphism Surfaces with Thin Borders & Restrained Blur */
 .zikr-glass {
   background: linear-gradient(
     145deg,
     var(--bg-surface) 0%,
-    rgba(9, 19, 40, 0.38) 100%
+    rgba(8, 17, 36, 0.4) 100%
   );
   background-color: var(--bg-surface);
-  backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
   border: 1px solid var(--border-glass);
   box-shadow: var(--shadow-glass);
   transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -412,44 +589,152 @@ html.light .zikr-glass {
   background: linear-gradient(
     145deg,
     rgba(255, 255, 255, 0.86) 0%,
-    rgba(255, 255, 255, 0.66) 100%
+    rgba(255, 255, 255, 0.68) 100%
   );
 }
 
 .zikr-glass-strong {
   background-color: var(--bg-surface-strong);
-  backdrop-filter: blur(24px) saturate(155%);
-  -webkit-backdrop-filter: blur(24px) saturate(155%);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
   border: 1px solid var(--border-glass);
   box-shadow: var(--shadow-glass);
 }
 
 .zikr-glass-subcard {
   background-color: var(--bg-subcard);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
   border: 1px solid var(--border-subtle);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
-  transition: border-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 260ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.zikr-glass-subcard:hover {
-  border-color: var(--border-glass-highlight);
+@media (hover: hover) {
+  .zikr-glass-subcard:hover {
+    border-color: var(--border-glass-highlight);
+    transform: translateY(-3.5px) scale(1.01);
+    box-shadow: 0 16px 36px -10px rgba(2, 6, 23, 0.55),
+      0 0 24px -6px rgba(16, 185, 129, 0.22),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.16);
+  }
+}
+
+/* Moving Reflective Sheen Across Living Glass Panels */
+.zikr-glass-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.zikr-glass-shimmer::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -80%;
+  width: 50%;
+  height: 220%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 30%,
+    rgba(56, 189, 248, 0.14) 50%,
+    rgba(52, 211, 153, 0.1) 65%,
+    transparent 100%
+  );
+  transform: rotate(24deg) translate3d(0, 0, 0);
+  pointer-events: none;
+  z-index: 1;
+  animation: zikrGlassSheenGlider 8.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes zikrGlassSheenGlider {
+  0% {
+    transform: translate3d(-140%, -140%, 0) rotate(24deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  38% {
+    transform: translate3d(380%, 380%, 0) rotate(24deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(380%, 380%, 0) rotate(24deg);
+    opacity: 0;
+  }
+}
+
+/* Sacred Breathing Glow for Emblems & Badges */
+.zikr-breathing-glow {
+  animation: zikrBreathingGlow 4.5s ease-in-out infinite;
+}
+
+@keyframes zikrBreathingGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 16px -2px rgba(16, 185, 129, 0.3),
+      0 0 24px -4px rgba(56, 189, 248, 0.22);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 34px 4px rgba(16, 185, 129, 0.6),
+      0 0 48px 8px rgba(56, 189, 248, 0.38),
+      inset 0 0 14px rgba(52, 211, 153, 0.25);
+    transform: scale(1.03);
+  }
+}
+
+/* Icon Micro-Animations */
+.zikr-icon-bounce {
+  animation: zikrIconBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes zikrIconBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.zikr-spin-slow {
+  animation: zikrSpinSlow 120s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes zikrSpinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .zikr-icon-orb {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
+  flex-shrink: 0;
+  width: 2.375rem;
+  height: 2.375rem;
   border-radius: 9999px;
   background: linear-gradient(
     135deg,
     rgba(16, 185, 129, 0.16) 0%,
     rgba(56, 189, 248, 0.12) 100%
   );
-  border: 1px solid rgba(52, 211, 153, 0.24);
+  border: 1px solid rgba(52, 211, 153, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (hover: hover) {
@@ -457,11 +742,191 @@ html.light .zikr-glass {
     background-color: var(--bg-surface-hover);
     border-color: var(--border-glass-highlight);
     box-shadow: var(--shadow-glass-hover);
-    transform: translateY(-2px);
+    transform: translateY(-5px) scale(1.008);
+  }
+
+  .zikr-glass-interactive:hover .zikr-icon-orb {
+    border-color: rgba(52, 211, 153, 0.55);
+    box-shadow: 0 0 20px -2px rgba(16, 185, 129, 0.38),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    transform: scale(1.1) rotate(3deg);
   }
 }
 
-/* Purposeful Entrance & Ambient Glow Animations */
+/* Distinct Visual Treatment 1: Quranic Sanctuary Surface (Emerald Mihrab Illumination) */
+.zikr-quran-sanctuary {
+  position: relative;
+  background: linear-gradient(
+    155deg,
+    rgba(6, 24, 38, 0.58) 0%,
+    rgba(8, 19, 36, 0.48) 52%,
+    rgba(6, 28, 34, 0.54) 100%
+  );
+  backdrop-filter: blur(20px) saturate(145%);
+  -webkit-backdrop-filter: blur(20px) saturate(145%);
+  border: 1px solid rgba(52, 211, 153, 0.26);
+  box-shadow: 0 24px 56px -16px rgba(2, 6, 23, 0.78),
+    0 0 36px -12px rgba(16, 185, 129, 0.16),
+    inset 0 1px 0 0 rgba(167, 243, 208, 0.18);
+  transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .zikr-quran-sanctuary {
+  background: linear-gradient(
+    155deg,
+    rgba(244, 253, 249, 0.78) 0%,
+    rgba(255, 255, 255, 0.70) 52%,
+    rgba(240, 251, 247, 0.76) 100%
+  );
+  border: 1px solid rgba(16, 185, 129, 0.26);
+  box-shadow: 0 22px 48px -16px rgba(15, 23, 42, 0.08),
+    0 0 32px -10px rgba(16, 185, 129, 0.14),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+}
+
+.zikr-quran-verse-frame {
+  position: relative;
+  background: radial-gradient(
+    ellipse 90% 80% at 50% 50%,
+    rgba(16, 185, 129, 0.1) 0%,
+    rgba(6, 18, 34, 0.52) 100%
+  );
+  border: 1px solid rgba(52, 211, 153, 0.22);
+  box-shadow: inset 0 1px 0 0 rgba(167, 243, 208, 0.12);
+}
+
+html.light .zikr-quran-verse-frame {
+  background: radial-gradient(
+    ellipse 90% 80% at 50% 50%,
+    rgba(16, 185, 129, 0.09) 0%,
+    rgba(248, 252, 250, 0.88) 100%
+  );
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+}
+
+.zikr-quran-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(52, 211, 153, 0.42) 50%,
+    transparent 100%
+  );
+}
+
+/* Distinct Visual Treatment 2: Prophetic Hadith Editorial Ledger & Structured Rows */
+.zikr-hadith-ledger {
+  position: relative;
+  background-color: var(--bg-surface);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  border-top: 1px solid rgba(56, 189, 248, 0.28);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.22);
+  border-inline: 1px solid var(--border-glass);
+  box-shadow: 0 22px 50px -18px rgba(2, 6, 23, 0.68),
+    inset 0 1px 0 0 rgba(186, 230, 253, 0.12);
+}
+
+html.light .zikr-hadith-ledger {
+  background-color: rgba(255, 255, 255, 0.74);
+  border-top: 1px solid rgba(2, 132, 199, 0.28);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.22);
+  box-shadow: 0 20px 44px -18px rgba(15, 23, 42, 0.075),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.96);
+}
+
+.zikr-hadith-row {
+  position: relative;
+  transition: background-color 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) {
+  .zikr-hadith-row:hover {
+    background-color: rgba(56, 189, 248, 0.045);
+  }
+
+  html.light .zikr-hadith-row:hover {
+    background-color: rgba(14, 165, 233, 0.04);
+  }
+}
+
+/* Distinct Visual Treatment 2b: Prophetic Hadith Manuscript Callout */
+.zikr-hadith-manuscript {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(9, 20, 42, 0.56) 0%,
+    rgba(7, 15, 32, 0.46) 100%
+  );
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 22px 50px -16px rgba(2, 6, 23, 0.74),
+    0 0 28px -12px rgba(56, 189, 248, 0.13),
+    inset 0 1px 0 0 rgba(186, 230, 253, 0.14);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .zikr-hadith-manuscript {
+  background: linear-gradient(
+    145deg,
+    rgba(245, 250, 255, 0.78) 0%,
+    rgba(255, 255, 255, 0.70) 100%
+  );
+  border: 1px solid rgba(14, 165, 233, 0.22);
+  box-shadow: 0 20px 44px -16px rgba(15, 23, 42, 0.075),
+    0 0 26px -10px rgba(14, 165, 233, 0.11),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+}
+
+@media (hover: hover) {
+  .zikr-quran-sanctuary:hover {
+    border-color: rgba(52, 211, 153, 0.42);
+    transform: translateY(-2px);
+  }
+
+  .zikr-hadith-manuscript:hover {
+    border-color: rgba(56, 189, 248, 0.38);
+    transform: translateY(-2.5px);
+    box-shadow: 0 26px 56px -14px rgba(2, 6, 23, 0.8),
+      0 0 30px -10px rgba(56, 189, 248, 0.2),
+      inset 0 1px 0 0 rgba(186, 230, 253, 0.22);
+  }
+
+  html.light .zikr-hadith-manuscript:hover {
+    border-color: rgba(2, 132, 199, 0.36);
+    box-shadow: 0 24px 50px -14px rgba(15, 23, 42, 0.11),
+      0 0 26px -8px rgba(14, 165, 233, 0.16),
+      inset 0 1px 0 0 rgba(255, 255, 255, 1);
+  }
+}
+
+.zikr-hadith-matn-frame {
+  background: linear-gradient(
+    90deg,
+    rgba(56, 189, 248, 0.08) 0%,
+    rgba(12, 25, 50, 0.45) 100%
+  );
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-inline-start: 3px solid rgba(56, 189, 248, 0.58);
+}
+
+html.light .zikr-hadith-matn-frame {
+  background: linear-gradient(
+    90deg,
+    rgba(14, 165, 233, 0.07) 0%,
+    rgba(248, 251, 255, 0.85) 100%
+  );
+  border: 1px solid rgba(14, 165, 233, 0.18);
+  border-inline-start: 3px solid rgba(2, 132, 199, 0.62);
+}
+
+/* Purposeful Entrance, Mockup Scale & Ambient Glow Keyframes */
 @keyframes zikrFadeIn {
   from {
     opacity: 0;
@@ -482,77 +947,571 @@ html.light .zikr-glass {
   }
 }
 
+@keyframes zikrMockupReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0) scale(0.975);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 @keyframes zikrAmbientDriftPrimary {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) scale(1);
-    opacity: 0.84;
+    transform: translate3d(0px, 0px, 0) scale(1);
+    opacity: 0.66;
   }
-  50% {
-    transform: translate3d(20px, -14px, 0) scale(1.06);
-    opacity: 0.96;
+  25% {
+    transform: translate3d(105px, -64px, 0) scale(1.15);
+    opacity: 0.98;
+  }
+  52% {
+    transform: translate3d(42px, 74px, 0) scale(0.92);
+    opacity: 0.72;
+  }
+  78% {
+    transform: translate3d(-86px, -38px, 0) scale(1.1);
+    opacity: 0.94;
   }
 }
 
 @keyframes zikrAmbientDriftSecondary {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0px, 0px, 0) scale(1);
+    opacity: 0.64;
+  }
+  28% {
+    transform: translate3d(-112px, 68px, 0) scale(1.16);
+    opacity: 0.96;
+  }
+  56% {
+    transform: translate3d(76px, 48px, 0) scale(0.9);
+    opacity: 0.68;
+  }
+  82% {
+    transform: translate3d(92px, -62px, 0) scale(1.12);
+    opacity: 0.94;
+  }
+}
+
+@keyframes zikrAmbientDriftTertiary {
+  0%,
+  100% {
+    transform: translate3d(0px, 0px, 0) scale(1);
+    opacity: 0.62;
+  }
+  33% {
+    transform: translate3d(96px, -72px, 0) scale(1.16);
+    opacity: 0.95;
+  }
+  67% {
+    transform: translate3d(-94px, -42px, 0) scale(0.92);
+    opacity: 0.76;
+  }
+}
+
+@keyframes zikrAmbientDriftQuaternary {
+  0%,
+  100% {
+    transform: translate3d(0px, 0px, 0) scale(0.95);
+    opacity: 0.58;
+  }
+  36% {
+    transform: translate3d(-92px, -64px, 0) scale(1.18);
+    opacity: 0.94;
+  }
+  72% {
+    transform: translate3d(98px, 58px, 0) scale(1.06);
     opacity: 0.78;
   }
+}
+
+@keyframes zikrLightWaveSlow {
+  0%,
+  100% {
+    transform: translate3d(-9%, -3%, 0) rotate(-4deg) scale(1);
+    opacity: 0.56;
+  }
   50% {
-    transform: translate3d(-18px, 16px, 0) scale(1.05);
+    transform: translate3d(9%, 4%, 0) rotate(3deg) scale(1.12);
+    opacity: 0.96;
+  }
+}
+
+@keyframes zikrLightWaveCounter {
+  0%,
+  100% {
+    transform: translate3d(9%, 3%, 0) rotate(4deg) scale(1);
+    opacity: 0.54;
+  }
+  50% {
+    transform: translate3d(-9%, -4%, 0) rotate(-3deg) scale(1.14);
+    opacity: 0.94;
+  }
+}
+
+@keyframes zikrFlowingGradient {
+  0%,
+  100% {
+    transform: translate3d(-8%, -5%, 0) rotate(-2deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate3d(8%, 5%, 0) rotate(3deg) scale(1.12);
+    opacity: 0.98;
+  }
+}
+
+/* Irregular, non-synchronized brightness flicker pulse loop */
+@keyframes zikrAreaShimmer {
+  0%,
+  100% {
+    transform: translate3d(0px, 0px, 0) scale(0.9);
+    opacity: 0.2;
+  }
+  18% {
+    transform: translate3d(26px, -18px, 0) scale(1.08);
+    opacity: 0.86;
+  }
+  34% {
+    transform: translate3d(8px, 12px, 0) scale(0.95);
+    opacity: 0.32;
+  }
+  56% {
+    transform: translate3d(-28px, 20px, 0) scale(1.14);
+    opacity: 0.94;
+  }
+  76% {
+    transform: translate3d(-12px, -14px, 0) scale(0.96);
+    opacity: 0.36;
+  }
+  89% {
+    transform: translate3d(18px, -8px, 0) scale(1.06);
+    opacity: 0.78;
+  }
+}
+
+/* Continuous, organic, clearly visible particle flickers & glimmers */
+@keyframes zikrStarTwinkleCalm {
+  0%,
+  100% {
+    opacity: 0.16;
+    transform: translate3d(0px, 0px, 0) scale(0.82);
+  }
+  26% {
+    opacity: 0.94;
+    transform: translate3d(4px, -6px, 0) scale(1.34);
+  }
+  52% {
+    opacity: 0.24;
+    transform: translate3d(-3px, -10px, 0) scale(0.9);
+  }
+  78% {
+    opacity: 0.86;
+    transform: translate3d(3px, -4px, 0) scale(1.24);
+  }
+}
+
+@keyframes zikrStarTwinkleRare {
+  0%,
+  100% {
+    opacity: 0.14;
+    transform: translate3d(0px, 0px, 0) scale(0.8);
+  }
+  32% {
+    opacity: 0.32;
+    transform: translate3d(-5px, -6px, 0) scale(0.96);
+  }
+  58% {
+    opacity: 0.98;
+    transform: translate3d(5px, -12px, 0) scale(1.42);
+  }
+  84% {
+    opacity: 0.28;
+    transform: translate3d(2px, -5px, 0) scale(0.92);
+  }
+}
+
+@keyframes zikrFlickerGlimmer {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.78);
+  }
+  19% {
     opacity: 0.92;
+    transform: scale(1.36);
+  }
+  37% {
+    opacity: 0.22;
+    transform: scale(0.88);
+  }
+  63% {
+    opacity: 0.98;
+    transform: scale(1.44);
+  }
+  83% {
+    opacity: 0.26;
+    transform: scale(0.92);
+  }
+}
+
+@keyframes zikrParticleDrift {
+  0%,
+  100% {
+    transform: translate3d(0px, 0px, 0) scale(0.85);
+    opacity: 0.2;
+  }
+  34% {
+    transform: translate3d(14px, -16px, 0) scale(1.35);
+    opacity: 0.94;
+  }
+  68% {
+    transform: translate3d(-12px, -26px, 0) scale(1.08);
+    opacity: 0.48;
+  }
+  86% {
+    transform: translate3d(6px, -10px, 0) scale(1.26);
+    opacity: 0.84;
   }
 }
 
 .zikr-anim-fade {
-  animation: zikrFadeIn 360ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: zikrFadeIn 320ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .zikr-anim-up {
-  animation: zikrSlideUp 400ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: zikrSlideUp 420ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .zikr-anim-up-delay-1 {
-  animation: zikrSlideUp 440ms cubic-bezier(0.16, 1, 0.3, 1) 55ms both;
+  animation: zikrSlideUp 440ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 65ms) both;
 }
 
 .zikr-anim-up-delay-2 {
-  animation: zikrSlideUp 480ms cubic-bezier(0.16, 1, 0.3, 1) 110ms both;
+  animation: zikrSlideUp 460ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 130ms) both;
+}
+
+.zikr-anim-up-delay-3 {
+  animation: zikrSlideUp 480ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 195ms) both;
+}
+
+.zikr-anim-mockup {
+  animation: zikrMockupReveal 520ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 90ms) both;
+}
+
+/* Coordinated Page Shell Initial Entrance Keyframes */
+@keyframes zikrAtmosphereFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.zikr-atmosphere-entrance {
+  animation: zikrAtmosphereFadeIn 1100ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes zikrNavbarEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.zikr-navbar-entrance {
+  animation: zikrNavbarEntrance 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes zikrFooterEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.zikr-footer-entrance {
+  animation: zikrFooterEntrance 650ms cubic-bezier(0.16, 1, 0.3, 1) 120ms both;
+}
+
+/* Scroll-Aware Viewport Entrance & Exit Choreography (Deliberate, Smooth, Visibly Noticeable) */
+[data-zikr-reveal] {
+  transition: opacity 640ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    transform 680ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-zikr-reveal].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 36px, 0) scale(0.97);
+  pointer-events: none;
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="heading"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="editorial"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="card"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0) scale(0.96);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="verse"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 36px, 0) scale(0.97);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="mockup"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 48px, 0) scale(0.93);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="button"] {
+  transition: opacity 560ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    transform 600ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-zikr-reveal="button"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0) scale(0.96);
+  pointer-events: none;
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="button"].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  pointer-events: auto;
+}
+
+[data-zikr-reveal="button"].is-exited-top {
+  opacity: 0.18;
+  transform: translate3d(0, -14px, 0) scale(0.98);
+  pointer-events: none;
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="section"].is-below-fold {
+  opacity: 0;
+  transform: translate3d(0, 36px, 0);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  pointer-events: auto;
+}
+
+[data-zikr-reveal].is-exited-top {
+  opacity: 0.18;
+  transform: translate3d(0, -18px, 0) scale(0.98);
+  pointer-events: none;
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="heading"].is-exited-top {
+  opacity: 0.15;
+  transform: translate3d(0, -16px, 0);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="editorial"].is-exited-top {
+  opacity: 0.15;
+  transform: translate3d(0, -16px, 0);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="verse"].is-exited-top {
+  opacity: 0.18;
+  transform: translate3d(0, -18px, 0) scale(0.98);
+  transition-delay: 0ms !important;
+}
+
+[data-zikr-reveal="card"].is-exited-top {
+  opacity: 0.18;
+  transform: translate3d(0, -18px, 0) scale(0.98);
+  transition-delay: 0ms !important;
 }
 
 .zikr-ambient-orb-1 {
-  animation: zikrAmbientDriftPrimary 24s ease-in-out infinite;
+  animation-name: zikrAmbientDriftPrimary;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
   will-change: transform, opacity;
 }
 
 .zikr-ambient-orb-2 {
-  animation: zikrAmbientDriftSecondary 30s ease-in-out infinite;
+  animation-name: zikrAmbientDriftSecondary;
+  animation-duration: 19s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
   will-change: transform, opacity;
 }
 
-/* Respect Reduced Motion Preference */
+.zikr-ambient-orb-3 {
+  animation-name: zikrAmbientDriftTertiary;
+  animation-duration: 23s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-ambient-orb-4 {
+  animation-name: zikrAmbientDriftQuaternary;
+  animation-duration: 17s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-light-wave-1 {
+  animation-name: zikrLightWaveSlow;
+  animation-duration: 18s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-light-wave-2 {
+  animation-name: zikrLightWaveCounter;
+  animation-duration: 22s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-flowing-gradient {
+  animation-name: zikrFlowingGradient;
+  animation-duration: 16s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-area-shimmer {
+  animation-name: zikrAreaShimmer;
+  animation-duration: var(--shimmer-duration, 8s);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--shimmer-delay, 0s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-star-calm {
+  animation-name: zikrStarTwinkleCalm;
+  animation-duration: var(--star-duration, 6s);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-star-rare {
+  animation-name: zikrStarTwinkleRare;
+  animation-duration: var(--star-duration, 7s);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-flicker-glimmer {
+  animation-name: zikrFlickerGlimmer;
+  animation-duration: var(--star-duration, 5s);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+.zikr-particle-drift {
+  animation-name: zikrParticleDrift;
+  animation-duration: var(--star-duration, 8s);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--star-delay, 0s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  will-change: transform, opacity;
+}
+
+/* Gentle Ambient Light Reflections Behind Sections & App Mockups */
+.zikr-section-reflection {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Respect Reduced Motion Preference with Calm Stationary Breathing Illumination */
 @media (prefers-reduced-motion: reduce) {
   .zikr-anim-fade,
   .zikr-anim-up,
   .zikr-anim-up-delay-1,
   .zikr-anim-up-delay-2,
-  .zikr-ambient-orb-1,
-  .zikr-ambient-orb-2 {
+  .zikr-anim-up-delay-3,
+  .zikr-anim-mockup,
+  .zikr-navbar-entrance,
+  .zikr-footer-entrance,
+  .zikr-atmosphere-entrance,
+  [data-zikr-reveal],
+  [data-zikr-reveal].is-below-fold,
+  [data-zikr-reveal].is-exited-top {
     animation: none !important;
     transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
   }
 
-  .zikr-glass,
-  .zikr-glass-interactive:hover,
-  .zikr-btn-primary:hover,
-  .zikr-control-pill:hover,
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .zikr-ambient-orb-1,
+  .zikr-ambient-orb-2,
+  .zikr-ambient-orb-3,
+  .zikr-ambient-orb-4,
+  .zikr-light-wave-1,
+  .zikr-light-wave-2,
+  .zikr-flowing-gradient,
+  .zikr-area-shimmer,
+  .zikr-star-calm,
+  .zikr-star-rare,
+  .zikr-flicker-glimmer,
+  .zikr-particle-drift {
+    animation: none !important;
   }
 }
